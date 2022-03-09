@@ -17,7 +17,7 @@ https://github.com/ccsocha04/grupo_2_almacenDeVinos
 ```
 
 
-## Definir la temática del Market Place 📋
+### Definir la temática del Market Place 📋
 
 _Descripción de la oferta de productos y/o servicios_
 
@@ -33,7 +33,7 @@ Público en general mayor de edad de diferentes paises.
 ```
 
 
-## Buscar inspiración en referentes del mercado 📌
+### Buscar inspiración en referentes del mercado 📌
 
 _Nuestros referentes_
 
@@ -49,7 +49,7 @@ _Nuestros referentes_
 10. [Dislicores](https://www.dislicores.com/)
 
 
-## Crear un wireframe y un boceto del sitio 🛠️
+### Crear un wireframe y un boceto del sitio 🛠️
 
 * [Home](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/wireframes/home.pdf)
 * [Detalles de producto](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/wireframes/Detalle%20del%20producto.pdf)
@@ -58,7 +58,7 @@ _Nuestros referentes_
 * [Formulario de login](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/wireframes/log%20in.pdf)
 
 
-## Boceto o diseño del sitio
+### Boceto o diseño del sitio
 
 _Pendiente de definición, crear carpeta design_
 
