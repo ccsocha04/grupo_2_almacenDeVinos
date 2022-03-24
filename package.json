@@ -1,0 +1,23 @@
+{
+  "name": "grupo_2_almacenvinos",
+  "version": "1.0.0",
+  "description": "Proyecto Integrador Almacén de Vinos",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemond start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccsocha04/grupo_2_almacenDeVinos.git"
+  },
+  "author": "Sebastian Angelicola / Juan José Giménez / Cristian Socha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccsocha04/grupo_2_almacenDeVinos/issues"
+  },
+  "homepage": "https://github.com/ccsocha04/grupo_2_almacenDeVinos#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}

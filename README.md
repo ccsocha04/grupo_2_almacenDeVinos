@@ -67,6 +67,34 @@ _Pendiente de definición, crear carpeta design_
 * Tipografías
 
 
+## Comenzando - Sprint 2 🚀🚀
+
+_Codear usando **HTML** y **CSS**_
+
+* Sitio estéticamente agradable (UI - User Interface).
+* Sitio fácil de usar (UX - User Experience).
+
+
+### Retrospectiva
+
+_Realizar una breve retrospectiva_
+
+
+### Tablero de trabajo
+
+_Crear un tablero de trabajo en **Trello**_
+
+
+### Página: Inicio
+
+_Crear estructura de trabajo con **Node.js** y **Express**_
+
+### Página: Detalle de producto
+### Página: Carrito de compras
+### Página: Registro
+### Página: Login
+
+
 ## Autores ✒️
 
 _Colaboradores proyecto integrador **Almacén de Vinos**_
