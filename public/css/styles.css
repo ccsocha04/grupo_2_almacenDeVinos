@@ -131,12 +131,27 @@ footer {
   padding: 15px;
   background-color: #111111;
   color: #f6f6f6;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
 }
 
 @media (min-width: 479px) {
+
   .foot {
-    display: inline-flex;
-    justify-content: space-between;
+    flex-wrap: initial;
+    gap: 10px;
   }
 }
 
