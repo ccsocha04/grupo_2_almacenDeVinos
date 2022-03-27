@@ -8,13 +8,18 @@
 
 header {
   display: flex;
-  background-color: #111111;
-  justify-content: center;
   flex-wrap: wrap;
-  padding: 20px;
+  background-color: #111111;
   position: sticky;
   top: 0px;
+  align-items: center;
+  justify-content: space-between;
 }
+
+body {
+  background-color: #f6f6f6;
+}
+
 
 img {
   width: 100%;
@@ -29,9 +34,9 @@ img {
   align-self: center;
 }
 
-.logo {
+.burguer-menu {
+  color: #f6f6f6;
   text-align: center;
-  width: 50%;
 }
 
 .fa-user {
@@ -45,10 +50,8 @@ img {
 }
 
 .carrito {
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #f6f6f6;
+  text-align: center;
 }
 
 .fa-shopping-cart {
@@ -58,14 +61,15 @@ img {
 .barra-busqueda {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: #f6f6f6;
   padding: 5px;
+  max-height: 25px;
+  max-width: 30%;
+  text-align: center;
 }
 
-.fa-search,
-.fa-times {
+.fa-search, .fa-times {
   color: #111111;
   background-color: #f6f6f6;
 }
@@ -87,13 +91,8 @@ form {
   width: 100%;
 }
 
-hr {
-  width: 100%;
-  margin-top: 10px;
-}
-
 .nav-bar {
-  display: flex;
+  display: none;
   margin-top: 10px;
 }
 
@@ -101,12 +100,25 @@ hr {
   padding: 5px;
 }
 
-li,
-a {
+li, a {
   list-style: none;
   text-decoration: none;
   color: #f6f6f6;
   display: inline-block;
+}
+
+.ing-reg {
+  width: 100%;
+  color: #f6f6f6;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.banner {
+  text-align: center;
+  width: 100%;
+  background-color: #91bdf0;
 }
 
 h2 {
@@ -122,7 +134,6 @@ h2 {
 }
 
 .articulos {
-  width: 30%;
   margin-bottom: 10px;
 }
 
@@ -148,6 +159,29 @@ footer {
 }
 
 @media (min-width: 479px) {
+
+  .burguer-menu {
+    display: none;
+  }
+
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-bar {
+    display: block;
+    text-align: center;
+  }
+.logo {
+  width: 100%;
+  text-align: center;
+}
+
+.barra-busqueda{
+  max-width: none;
+  width: 50%;
+}
 
   .foot {
     flex-wrap: initial;
