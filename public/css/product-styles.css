@@ -8,13 +8,18 @@
   
   header {
     display: flex;
-    background-color: #111111;
-    justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
+    background-color: #111111;
     position: sticky;
     top: 0px;
+    align-items: center;
+    justify-content: space-between;
   }
+  
+  body {
+    background-color: #f6f6f6;
+  }
+  
   
   img {
     width: 100%;
@@ -29,9 +34,9 @@
     align-self: center;
   }
   
-  .logo {
+  .burguer-menu {
+    color: #f6f6f6;
     text-align: center;
-    width: 50%;
   }
   
   .fa-user {
@@ -45,10 +50,8 @@
   }
   
   .carrito {
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #f6f6f6;
+    text-align: center;
   }
   
   .fa-shopping-cart {
@@ -58,26 +61,27 @@
   .barra-busqueda {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-radius: 5px;
+    border-radius: 2px;
     background-color: #f6f6f6;
     padding: 5px;
+    max-height: 25px;
+    max-width: 30%;
+    text-align: center;
   }
   
-  .fa-search,
-  .fa-times {
+  .fa-search, .fa-times {
     color: #111111;
     background-color: #f6f6f6;
   }
   
-  header input {
+  input {
     margin: 0 5px 0 5px;
     width: 100%;
     border: none;
     outline: none;
   }
   
-  header button {
+  button {
     border: none;
     background-color: #f6f6f6;
   }
@@ -87,13 +91,8 @@
     width: 100%;
   }
   
-  hr {
-    width: 100%;
-    margin-top: 10px;
-  }
-  
   .nav-bar {
-    display: flex;
+    display: none;
     margin-top: 10px;
   }
   
@@ -101,12 +100,25 @@
     padding: 5px;
   }
   
-  li,
-  a {
+  li, a {
     list-style: none;
     text-decoration: none;
     color: #f6f6f6;
     display: inline-block;
+  }
+  
+  .ing-reg {
+    width: 100%;
+    color: #f6f6f6;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .banner {
+    text-align: center;
+    width: 100%;
+    background-color: #91bdf0;
   }
   
   h2 {
@@ -117,21 +129,25 @@
   .productos {
     display: flex;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
   
   .articulos {
-    width: 30%;
-    margin-bottom: 10px;
+    width: 40%;
+    margin: auto;
+    padding-bottom: 5%;
+    
   }
-  
+
+
+
+/* detalles del producto */
 
 
 
 
-
-  .detalle {
+.detalle {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -152,8 +168,6 @@
 }
 
 
-
-
 .descripcion div {
 
     text-align: center;
@@ -168,7 +182,7 @@
     width: 100%;
     font-size: 30px;
     font-weight: bold;
-    padding: 50px 0px 0px 0px;
+    padding: 7% 0px 0px 0px;
     
     
 }
@@ -176,7 +190,7 @@
 .descripcion-producto {
     width: 75%;
     font-size: 20px;
-    padding: 25px 0px 0px 0px;
+    padding: 5% 0px 0px 0px;
     
 }
 
@@ -188,7 +202,7 @@
 .cantidad {
   font-size: 25px;
   margin-bottom: 15px;
-  padding: 25px 0px 0px 0px;
+  padding: 5% 0px 0px 0px;
 }
 
 .caja-cantidades {
@@ -210,13 +224,13 @@
 }
 
 .cantidad-producto {
-  padding: 25px 0px 0px 0px;
+  padding: 5% 0px 0px 0px;
   
 }
 
 .iconoyagrega{
 
-  padding: 25px 0px 0px 0px;
+  padding: 7% 0px 0px 0px;
 }
 
 
@@ -225,114 +239,174 @@
 }
 
 
+.oculto {
+  display: none;
+}
+
+
+
+
+/* Footer */
+
+
+
   footer {
     text-align: center;
     padding: 15px;
     background-color: #111111;
     color: #f6f6f6;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .foot {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .copyright {
+    width: 100%;
+    text-align: center;
   }
   
   @media (min-width: 479px) {
+  
+    .burguer-menu {
+      display: none;
+    }
+  
+    header {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .nav-bar {
+      display: block;
+      text-align: center;
+    }
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .barra-busqueda{
+    max-width: none;
+    width: 50%;
+  }
+  
     .foot {
-      display: inline-flex;
-      justify-content: space-between;
+      flex-wrap: initial;
+      gap: 10px;
     }
   }
   
   @media (min-width: 768px) {
 
-  .detalle {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-  
-  .imagen {
-      width: 40%;
-  }
-  
-  .descripcion {
-      width: 45%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
 
+    .detalle {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .imagen {
+        width: 40%;
+    }
+    
+    .descripcion {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+  
+        
+       
+        
+        
+    }
+    
+    
+    .descripcion div {
+    
+        text-align: center;
+        
+        
+        
+        margin: auto;
+    
+    }
+    
+    .nombre-producto {
+        width: 75%;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0px;
+        padding-bottom: 7%;
+        
+        
+       
+        
+    }
+    
+    .descripcion-producto {
+        width: 75%;
+        font-size: 20px;
+        padding: 0px;
+        padding-bottom: 7%;
+        
+    }
+    
+    .precio-producto {
+        font-size: 30px;
+        
+    }
+    
+    .cantidad {
+      font-size: 25px;
       
      
-      
-      
-  }
-  
-  
-  .descripcion div {
-  
+    }
+    
+    .caja-cantidades {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .valor-cantidad {
+        text-align: center;
+        width: 25%;
+        font-weight: bold;
+        height: 40px;
+    }
+    
+    .carrito-mas {
       text-align: center;
+      font-size: 35px;
       
-      
-      
-      margin: auto;
-  
-  }
-  
-  .nombre-producto {
-      width: 75%;
-      font-size: 30px;
-      font-weight: bold;
-      padding: 0px;
-      
-      
-     
-      
-  }
-  
-  .descripcion-producto {
-      width: 75%;
-      font-size: 20px;
-      
-  }
-  
-  .precio-producto {
-      font-size: 30px;
-      padding: 25px 0px 0px 0px;
-  }
-  
-  .cantidad {
-    font-size: 25px;
+    }
     
-    padding: 25px 0px 0px 0px;
-  }
-  
-  .caja-cantidades {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .valor-cantidad {
-      text-align: center;
-      width: 25%;
-      font-weight: bold;
-      height: 40px;
-  }
-  
-  .carrito-mas {
-    text-align: center;
-    font-size: 35px;
     
-  }
-  
-  .cantidad-producto {
-    padding: 25px 0px 0px 0px;
+    .puede-interesar {
+      padding: 50px;
+    }
+
+
+    .articulos {
+      width: 30%;
+      margin-bottom: 10px;
+    }
+
+    .oculto {
+      display: block;
+    }
     
-  }
-  
-  
-  .puede-interesar {
-    padding: 50px;
-  }
-  
   }
   
   @media (min-width: 1024px) {
+
+
   }
   
