@@ -17,3 +17,7 @@ app.get('/', (req, res) => {
 app.get('/product-detail', (req, res) => {
   res.sendFile(path.resolve(__dirname, './views/product-detail.html'));
 });
+
+app.get('/cart', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './views/cart.html'));
+});
