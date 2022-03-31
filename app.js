@@ -11,7 +11,15 @@ app.listen(3000, () => {
 });
 
 app.get('/', (req, res) => {
+  res.redirect('/home');
+});
+
+app.get('/home', (req, res) => {
   res.sendFile(path.resolve(__dirname, './views/home.html'));
+});
+
+app.get('/home_', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './views/home_.html'));
 });
 
 app.get('/product-detail', (req, res) => {
@@ -20,4 +28,8 @@ app.get('/product-detail', (req, res) => {
 
 app.get('/cart', (req, res) => {
   res.sendFile(path.resolve(__dirname, './views/cart.html'));
+});
+
+app.get('/login', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './views/login.html'));
 });

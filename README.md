@@ -63,8 +63,10 @@ _Nuestros referentes_
 _Pendiente de definición, crear carpeta design_
 
 * Logo
-* Colores
-* Tipografías
+* [Colores](https://coolors.co/palette/111111-2f2f2f-f6f6f6-ffcb74)
+![Paleta de Colores](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/public/img/colores.png)
+* [Tipografías](https://fonts.google.com/share?selection.family=Roboto:wght@300)
+![Tipografía](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/public/img/tipografía.png)
 
 
 ## Comenzando - Sprint 2 🚀🚀
@@ -79,21 +81,33 @@ _Codear usando **HTML** y **CSS**_
 
 _Realizar una breve retrospectiva_
 
+* [Estrella de mar](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/retro.md)
 
 ### Tablero de trabajo
 
 _Crear un tablero de trabajo en **Trello**_
 
+* [Tablero Almacén de Vinos](https://trello.com/b/u69BLLET/primera-entrega)
+
 
 ### Página: Inicio
 
-_Crear estructura de trabajo con **Node.js** y **Express**_
+_Home del sitio con la oferta de productos y/o servicios_
 
 ### Página: Detalle de producto
+
+_Página a la que accede el cliente al hacer click en un producto_
+
 ### Página: Carrito de compras
+
+_Página donde el cliente puede visualizar su compra actual y proceder al pago_
+
 ### Página: Registro
+
+_Página donde el cliente puede registrarse como usuario del sitio_
 ### Página: Login
 
+_Página donde el cliente puede ingresar con el usuario que creó previamente_
 
 ## Autores ✒️
 

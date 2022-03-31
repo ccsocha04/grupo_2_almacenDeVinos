@@ -6,18 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
 
-    <title>Almacén Vinos - Carro de compras</title>
+    <script src="https://kit.fontawesome.com/0a256d9d04.js" crossorigin="anonymous"></script>
+
+    <title>Wine ONE LIFE - Carro de compras</title>
 </head>
 
 <body>
     <header class="main-header">
-        <h1>Header</h1>
+        <a class="main-header-logo" href="/home">
+            <img class="logo" src="/img/logo/logo-wineonelife-blanco.svg" alt="WineOneLIFE">
+        </a>
+        <div class="topnav" id="myTopnav">
+            <a href="#home">Inicio</a>
+            <a href="#about">Nosotros</a>
+            <a href="/catalog">Catálogo</a>
+            <a href="/contact">Contáctanos</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="topnav-right">
+            <a href="/cart" class="active">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="badge">3</span>    
+            </a>
+            <a href="/login"><i class="fa-solid fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
     </header>
     <main class="main-sections">
-        <img class="banner" src="/img/img-home-banner.jpg" alt="Almacén de Vinos">
         <section class="section-article">
+            <h2>Productos</h2>
             <div class="section-detail">
                 <article class="article-detail">
                     <img class="imagen" src="/img/producto.jpg" alt="Producto">
@@ -97,8 +119,41 @@
             </div>
         </section>
     </main>
-    <footer class="main-footer">
-        <h1>Footer</h1>
+    <footer>
+        <div class="foot">
+            <section>
+                <p>Preguntas frecuentes</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi nisi rerum</p>
+                <br>
+            </section>
+            <section>
+                <p>Sobre nosotros</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi nisi rerum</p>
+                <br>
+            </section>
+            <section>
+                <p>Envios</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi nisi rerum</p>
+                <br>
+            </section>
+            <section>
+                <p>Nuestras redes</p>
+                <br>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter-square"></i>
+            </section>
+        </div>
+        <section class="copyright">
+            <br>
+            Copyright © 1999-2022 Almacén de Vinos S.A.
+        </section>
     </footer>
 </body>
 

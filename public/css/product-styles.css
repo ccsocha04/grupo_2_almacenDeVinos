@@ -17,7 +17,7 @@ header {
 }
 
 body {
-  font-family: Open Sans,Arial,Helvetica,sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #f6f6f6;
 }
 
@@ -157,6 +157,7 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    padding-top: 48%;
     
 }
 
