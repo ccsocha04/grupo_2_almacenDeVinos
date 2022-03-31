@@ -64,9 +64,9 @@ _Pendiente de definición, crear carpeta design_
 
 * Logo
 * [Colores](https://coolors.co/palette/111111-2f2f2f-f6f6f6-ffcb74)
-![Paleta de Colores](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/public/img/colores.png)
+![Paleta de Colores](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/public/img/colores/colores.png)
 * [Tipografías](https://fonts.google.com/share?selection.family=Roboto:wght@300)
-![Tipografía](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/public/img/tipografía.png)
+![Tipografía](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/public/img/tipografía//tipografía.png)
 
 
 ## Comenzando - Sprint 2 🚀🚀
@@ -94,20 +94,30 @@ _Crear un tablero de trabajo en **Trello**_
 
 _Home del sitio con la oferta de productos y/o servicios_
 
+* [Home](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/views/home.html)
+
 ### Página: Detalle de producto
 
 _Página a la que accede el cliente al hacer click en un producto_
+
+* [Detalle de producto](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/views/product-detail.html)
 
 ### Página: Carrito de compras
 
 _Página donde el cliente puede visualizar su compra actual y proceder al pago_
 
+* [Carrito de compras](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/views/cart.html)
+
 ### Página: Registro
 
 _Página donde el cliente puede registrarse como usuario del sitio_
+
+* [Register](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/views/login.html)
 ### Página: Login
 
 _Página donde el cliente puede ingresar con el usuario que creó previamente_
+
+* [Login](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/views/login.html)
 
 ## Autores ✒️
 
