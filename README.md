@@ -63,10 +63,11 @@ _Nuestros referentes_
 _Pendiente de definición, crear carpeta design_
 
 * Logo
+![Logo Wine ONE LIFE](https://raw.githubusercontent.com/ccsocha04/grupo_2_almacenDeVinos/11054ff173c051783b71375452acbaacf07e5876/public/img/logo/logo-wineonelife-dorado.svg)
 * [Colores](https://coolors.co/palette/111111-2f2f2f-f6f6f6-ffcb74)
-![Paleta de Colores](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/public/img/colores/colores.png)
+![Paleta de Colores](https://raw.githubusercontent.com/ccsocha04/grupo_2_almacenDeVinos/main/public/img/colores/colores.PNG)
 * [Tipografías](https://fonts.google.com/share?selection.family=Roboto:wght@300)
-![Tipografía](https://github.com/ccsocha04/grupo_2_almacenDeVinos/blob/main/public/img/tipografía//tipografía.png)
+![Tipografía](https://raw.githubusercontent.com/ccsocha04/grupo_2_almacenDeVinos/main/public/img/tipograf%C3%ADa/tipograf%C3%ADa.PNG)
 
 
 ## Comenzando - Sprint 2 🚀🚀
