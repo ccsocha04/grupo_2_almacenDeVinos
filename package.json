@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ccsocha04/grupo_2_almacenDeVinos#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.3",
     "nodemon": "^2.0.15"
   }

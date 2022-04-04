@@ -3,33 +3,25 @@ const path = require('path');
 
 const app = express();
 
+app.set("view engine", "ejs");
+
 const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath));
+
+const mainRouters = require("./routers/mainRouters");
 
 app.listen(3000, () => {
   console.log('Server started on port 3000');
 });
 
-app.get('/', (req, res) => {
-  res.redirect('/home');
-});
+app.use('/', mainRouters);
 
-app.get('/home', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './views/home.html'));
-});
+app.use('/home', mainRouters);
 
-app.get('/home_', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './views/home_.html'));
-});
+app.use('/home_', mainRouters);
 
-app.get('/product-detail', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './views/product-detail.html'));
-});
+app.use('/product-detail', mainRouters);
 
-app.get('/cart', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './views/cart.html'));
-});
+app.use('/login', mainRouters);
 
-app.get('/login', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './views/login.html'));
-});
+app.use('/carts', mainRouters);

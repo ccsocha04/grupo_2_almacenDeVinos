@@ -15,28 +15,9 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <a class="main-header-logo" href="/home">
-            <img class="logo" src="/img/logo/logo-wineonelife-blanco.svg" alt="WineOneLIFE">
-        </a>
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Catálogo</a>
-            <a href="#">Contáctanos</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-        <div class="topnav-right">
-            <a href="/cart">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span class="badge">3</span>
-            </a>
-            <a href="/login"><i class="fa-solid fa-user"></i></a>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-        </div>
-    </header>
+    <%- include("partials/head.ejs") %> 
+       
+
     <main>
             <div class="container">
             <img src="/img/wine.jpg" alt="" class="first">
