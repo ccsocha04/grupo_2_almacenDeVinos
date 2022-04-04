@@ -7,110 +7,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/img/fav-logo.png"> <!-- Coloco imagen en pestaña del navegador -->
     <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/product-styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/e638c2695f.js" crossorigin="anonymous"></script>
-    
 
-    <title>Almacén de vinos</title>
+    <title>Wine ONE LIFE - Detalle Porducto</title>
 </head>
 
 <body>
-    <header>
-        <div class="left-header"> <!-- contiene texto e icono ingresar / regist -->
-            <div class="ingresar"><i class="fas fa-user"></i></div>
-            <div class="texto-header">INGRESAR RESGISTRARSE</div>
+    <header class="main-header">
+        <a class="main-header-logo" href="/home">
+            <img class="logo" src="/img/logo/logo-wineonelife-blanco.svg" alt="WineOneLIFE">
+        </a>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Catálogo</a>
+            <a href="#">Contáctanos</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <div class="logo">
-            <a href="/home"><img src="/img/logo.png"></a>
+        <div class="topnav-right">
+            <a href="/cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="badge">3</span>
+            </a>
+            <a href="/login"><i class="fa-solid fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
-        <div class="carrito"><i class="fas fa-shopping-cart"></i></div>
-        <div class="barra-busqueda"> <!-- contiene la barra de busqueda y sus iconos -->
-            <form action="">
-                <i class="fas fa-search"></i>
-                <input type="text" placeholder="Buscar productos" aria-label="search" />
-                <button type="reset"><i class="fas fa-times"></i></button>
-            </form>
-        </div>
-        <hr>
-        <div class="nav-bar"> <!-- barra de navegacion -->
-            <ul>
-                <li><a href="">Catalogo</a></li>
-                <li><a href="">Promociones</a></li>
-                <li><a href="">Sucursales</a></li>
-                <li><a href="">Contacto</a></li>
-            </ul>
-        </div>
-        <hr>
     </header>
     <main>
-
-
-
-
         <section class="detalle">
             <article class="imagen">
-    
+
                 <div><img src="/img/producto.jpg"></div>
                 <div>
-    
+
             </article>
-    
+
             <article class="descripcion">
-    
+
                 <div class="nombre-producto">
                     NOMBRE DEL PRODUCTO
                 </div>
-    
+
                 <div class="descripcion-producto">
-                    Breve descripción del articulo 
+                    Breve descripción del articulo
                 </div>
-    
+
                 <div class="precio-producto">
                     precio $$$
                 </div>
-    
+
                 <div class="cantidad-producto">
-                    
+
                     <label for="quantity" class="cantidad">Cantidad</label><br> <br>
                     <div class="caja-cantidades">
-                    <div class="boton-resta"><i class="fa-solid fa-minus"></i></div>
+                        <div class="boton-resta"><i class="fa-solid fa-minus"></i></div>
                         <input class="valor-cantidad" type="number" name="quantity" value="1" />
                         <div class="boton-suma"><i class="fa-solid fa-plus"></i></div>
-                    
+
                     </div>
                 </div>
 
                 <div class="iconoyagrega">
 
-                <i class="fa-solid fa-cart-plus carrito-mas"></i>
-    
-                <div class="agregar-producto">
+                    <i class="fa-solid fa-cart-plus carrito-mas"></i>
 
-                    añadir al carro
+                    <div class="agregar-producto">
+
+                        añadir al carro
+                    </div>
+
                 </div>
-    
-                </div>
-    
-            
-    
+
             </article>
-        </section> 
+        </section>
         <br>
         <br>
 
-
-
-
-
-       <hr>
-        <div class="puede-interesar"><h2>También puede interesarte</h2></div>
+        <hr>
+        <div class="puede-interesar">
+            <h2>También puede interesarte</h2>
+        </div>
         <br>
-        
-        
+
+
         <section class="productos">
             <article class="articulos">
-                <div> <a href="/product-detail"><img src="/img/producto.jpg" ></a></div>
+                <div> <a href="/product-detail"><img src="/img/producto.jpg"></a></div>
                 <div>
                     <p class="">Nombre del producto</p>
                 </div>
@@ -142,8 +129,8 @@
                 </div>
                 <div class=""><i class="fas fa-cart-arrow-down"></i></div>
             </article>
-            
-        <hr>
+
+            <hr>
 
     </main>
     <footer>
@@ -177,9 +164,9 @@
                 <i class="fab fa-twitter-square"></i>
             </section>
         </div>
-        <section>
+        <section class="copyright">
             <br>
-            <p>Copyright © 1999-2022 Almacén de Vinos S.A.</p>
+            Copyright © 1999-2022 Almacén de Vinos S.A.
         </section>
     </footer>
 </body>

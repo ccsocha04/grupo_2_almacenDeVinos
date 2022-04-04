@@ -5,47 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/img/fav-logo.png"> <!-- Coloco imagen en pestaña del navegador -->
-    <link rel="stylesheet" href="/css/normalize.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <title>Almacén de vinos</title>
+
+    <script src="https://kit.fontawesome.com/0a256d9d04.js" crossorigin="anonymous"></script>
+
+    <title>Wine ONE LIFE - Inicio</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="/"><img src="/img/logo_movil.jpg"></a>
+    <header class="main-header">
+        <a class="main-header-logo" href="/home">
+            <img class="logo" src="/img/logo/logo-wineonelife-blanco.svg" alt="WineOneLIFE">
+        </a>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Catálogo</a>
+            <a href="#">Contáctanos</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-
-        <div class="barra-busqueda">
-            <!-- contiene la barra de busqueda y sus iconos -->
-            <form action="">
-                <i class="fas fa-search"></i>
-                <input type="text" placeholder="| Buscar productos" aria-label="search" />
-                <button type="reset"><i class="fas fa-times"></i></button>
-            </form>
-        </div>
-        <div class="burguer-menu"><i class="fas fa-bars"></i></div>
-        <div class="carrito"><i class="fas fa-shopping-cart"></i></div>
-        <br>
-        <div class="ing-reg">
-            <br>
-            <p>INGRESAR - <i class="fas fa-wine-glass-alt"></i> - REGISTRARSE</p>
-            <br>
-        </div>
-        <div class="nav-bar">
-            <!-- barra de navegacion -->
-            <ul>
-                <li><a href="">Catalogo</a></li>
-                <li><a href="">Promociones</a></li>
-                <li><a href="">Sucursales</a></li>
-                <li><a href="">Contacto</a></li>
-            </ul>
+        <div class="topnav-right">
+            <a href="/cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="badge">3</span>
+            </a>
+            <a href="/login"><i class="fa-solid fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
     </header>
     <main>
-        <div class="container">
+            <div class="container">
             <img src="/img/wine.jpg" alt="" class="first">
             <div class="wine">Wines</div>
             <img src="/img/beer.jpg" alt="" class="second">
@@ -54,12 +47,20 @@
             <div class="wiskey">wiskey</div>
             <img src="/img/champ.jpg" alt="" class="cuatro">
             <div class="champain">champain</div>
-        </div> 
+        </div>
         <br>
+    <div class="banner-image">
+        <div class="banner-text">
+            <p>ALMACÉN DE VINOS</p>
+            <h1>Wine ONE LIFE</h1>
+            <a href="#productos">
+                <button> Productos</button>
+            </a>
+        </div>
+    </div>
+    <main class="main-sections">
         <h2>Nuestras recomendaciones</h2>
-        <br>
-
-        <section class="productos">
+        <section id="productos" class="productos">
             <article class="articulos">
                 <div><a href="/product-detail"><img src="/img/producto1.jpg"></a></div>
                 <div>
@@ -107,44 +108,43 @@
                 </div>
             </article>
         </section>
-        <hr>
-
     </main>
     <footer>
-        <div class="foot">
-            <section>
-                <p>Preguntas frecuentes</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eligendi nisi rerum</p>
-                <br>
+        <div class="content-footer">
+            <section class="section-card">
+                <a class="fa-buttom" href="">
+                    <i class="fa-solid fa-credit-card"></i>
+                </a>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p>
+                    Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!
+                </p>
             </section>
-            <section>
-                <p>Sobre nosotros</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eligendi nisi rerum</p>
-                <br>
+            <section class="section-shipping">
+                <a class="fa-buttom" href="">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </a>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p>
+                    Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.
+                </p>
             </section>
-            <section>
-                <p>Envios</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eligendi nisi rerum</p>
-                <br>
-            </section>
-            <section>
-                <p>Nuestras redes</p>
-                <br>
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter-square"></i>
+            <section class="section-user">
+                <a class="fa-buttom" href="">
+                    <i class="fa-solid fa-user-lock"></i>
+                </a>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>
+                    ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.
+                </p>
             </section>
         </div>
-        <section class="copyright">
-            <br>
-            Copyright © 1999-2022 Almacén de Vinos S.A.
-        </section>
+        <div class="copyright">
+            <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
+        </div>
     </footer>
 </body>
 
