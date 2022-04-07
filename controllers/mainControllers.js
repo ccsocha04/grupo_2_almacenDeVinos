@@ -1,5 +1,3 @@
-const path = require("path");
-
 let mainControllers = {
     home: function(req, res){
          res.render("home");    
