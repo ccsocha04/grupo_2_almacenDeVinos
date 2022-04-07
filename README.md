@@ -128,6 +128,7 @@ _Colaboradores proyecto integrador **Almacén de Vinos**_
 * **Sebastian Angelicola** - *Desarrollador Full Stack* - [Sebas-Ange](https://github.com/Sebas-Ange)
 * **Juan José Giménez** - *Desarrollador Full Stack* - [JuanJGimenez](https://github.com/JuanJGimenez)
 * **Cristian Socha** - *Desarrollador Full Stack* - [ccsocha04](https://github.com/ccsocha04)
+* **Gonzalo Fernandez** - *Desarrollador Full Stack* - [Gonz727](https://github.com/Gonz727)
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/ccsocha04/grupo_2_almacenDeVinos/graphs/contributors) quíenes han participado en este proyecto. 
 
