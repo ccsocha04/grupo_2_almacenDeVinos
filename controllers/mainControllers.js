@@ -6,13 +6,13 @@ let mainControllers = {
          res.render("home_");
 },
     detalleProducto: function(req, res){
-        res.render("product-detail"); // practica
+        res.render("./products/product-detail"); // practica
     },
     login: function(req, res){
-        res.render("login");
+        res.render("./user/login");
 },
     cart: function(req, res){
-    res.render("cart");
+    res.render("./products/cart");
 }
 }
 
