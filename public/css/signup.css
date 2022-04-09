@@ -44,16 +44,17 @@ html {
 }
 
 .ingresa {
-    font-weight: bold;
     width: 50%;
     text-align: center;
+    text-decoration: none;
     border-right: 2px solid lightgray;
 }
 
 .registra {
+    font-weight: bold;
     width: 50%;
     text-align: center;
-    text-decoration: none;
+    
 }
 
 .registra a {
@@ -83,8 +84,18 @@ input[type=email]:focus {
     outline: none;
 }
 
-/* Set a style for the submit button */
+.checkbox {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 3%;
+}
 
+.checkbox a {
+    color: red;
+    text-decoration: none;
+}
+/* Set a style for the submit button */
 .boton {
     margin: auto;
     text-align: center;

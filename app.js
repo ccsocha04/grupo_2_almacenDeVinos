@@ -24,4 +24,6 @@ app.use('/product-detail', mainRouters);
 
 app.use('/login', mainRouters);
 
+app.use('/signup', mainRouters);
+
 app.use('/carts', mainRouters);

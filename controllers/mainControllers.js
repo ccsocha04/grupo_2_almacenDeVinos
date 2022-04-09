@@ -10,6 +10,9 @@ let mainControllers = {
     },
     login: function(req, res){
         res.render("./user/login");
+    },
+    signup: function(req, res){
+        res.render("./user/signup");
 },
     cart: function(req, res){
     res.render("./products/cart");

@@ -13,6 +13,8 @@ router.get("/product-detail", mainControllers.detalleProducto);
 
 router.get("/login", mainControllers.login);
 
+router.get("/signup", mainControllers.signup);
+
 router.get("/cart", mainControllers.cart);
 
 

@@ -18,16 +18,18 @@
     
     <div class="bg-img">
         <form action="/action_page.php" class="container">
-            <div class="login-sign"><div>Ingresá</div> <div>Registrarse</div> </div>
+            <div class="login-sign"><div class="ingresa"><a href="./login">Ingresá</a></div> <div class="registra"> <a href="./signup"> Registrarse</a> </div> </div>
             <br>
 
             <label for="email"><b>Tu Email</b></label>
-            <input type="text" placeholder="Tu Email" name="email" required>
+            <input type="email" placeholder="Tu Email" name="email" required>
 
             <label for="psw"><b>Contraseña</b></label>
             <input type="password" placeholder="Constraseña" name="psw" required>
 
-            <button type="submit" class="btn">Login</button>
+            <div class="boton">
+
+            <button type="submit" class="btn">Iniciar sesión</button></div>
         </form>
     </div>
 </body>
