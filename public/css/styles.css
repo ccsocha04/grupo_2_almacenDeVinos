@@ -274,10 +274,20 @@ h2 {
     text-align: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .articulos {
-    margin-bottom: 10px;
+    border-radius: 10px;
+background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+             padding: 10px;
+}
+
+
+.img-producto {
+    max-height: 12rem;
 }
 
 .main-sections {
@@ -414,7 +424,7 @@ display: flex;
   justify-content: center;
   align-items: center;
   color: aliceblue;
-  padding: 30px;
+  padding: 10px;
   background-color: rgba(30, 30,30, 0.6);
   border-radius: 0x;
   backdrop-filter: blur(2px);
@@ -447,7 +457,7 @@ display: flex;
   color: aliceblue;
   grid-row: 2;
   grid-column: 3;
-  padding: 20px;
+  padding: 10px;
   background-color: rgba(30, 30,30, 0.6);
   border-radius: 0px;
   backdrop-filter: blur(2px);
@@ -464,7 +474,7 @@ display: flex;
   color: aliceblue;
   grid-row: 3;
   grid-column: 2;
-  padding: 20px;
+  padding: 10px;
   background-color: rgba(30, 30,30, 0.6);
   border-radius: 0px;
   backdrop-filter: blur(2px);
@@ -500,7 +510,7 @@ display: flex;
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) { /* vista tablet
     /* .banner-image {
         background-size: cover;
     } */
