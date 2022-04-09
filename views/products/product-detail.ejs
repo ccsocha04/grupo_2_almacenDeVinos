@@ -21,8 +21,8 @@
         <section class="detalle">
             <article class="imagen">
 
-                <div><img src="/img/producto.jpg"></div>
-                <div>
+                <img class="botella-vino" src="/img/producto.jpg">
+                
 
             </article>
 
@@ -76,7 +76,7 @@
 
         <section class="productos">
             <article class="articulos">
-                <div> <a href="/product-detail"><img src="/img/producto.jpg"></a></div>
+                <div> <a href="/product-detail"><img class="botella-vino" src="/img/producto.jpg"></a></div>
                 <div>
                     <p class="">Nombre del producto</p>
                 </div>
@@ -87,7 +87,7 @@
                 <div class=""><i class="fas fa-cart-arrow-down"></i></div>
             </article>
             <article class="articulos">
-                <div><a href="/product-detail"><img src="/img/producto.jpg"></a></div>
+                <div><a href="/product-detail"><img class="botella-vino" src="/img/producto.jpg"></a></div>
                 <div>
                     <p class="">Nombre del producto</p>
                 </div>
@@ -98,7 +98,7 @@
                 <div class=""><i class="fas fa-cart-arrow-down"></i></div>
             </article>
             <article class="articulos oculto">
-                <div><a href="/product-detail"><img src="/img/producto.jpg"></a></div>
+                <div><a href="/product-detail"><img class="botella-vino" src="/img/producto.jpg"></a></div>
                 <div>
                     <p class="">Nombre del producto</p>
                 </div>
@@ -112,42 +112,9 @@
             <hr>
 
     </main>
-    <footer>
-        <div class="foot">
-            <section>
-                <p>Preguntas frecuentes</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eligendi nisi rerum</p>
-                <br>
-            </section>
-            <section>
-                <p>Sobre nosotros</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eligendi nisi rerum</p>
-                <br>
-            </section>
-            <section>
-                <p>Envios</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eligendi nisi rerum</p>
-                <br>
-            </section>
-            <section>
-                <p>Nuestras redes</p>
-                <br>
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter-square"></i>
-            </section>
-        </div>
-        <section class="copyright">
-            <br>
-            Copyright © 1999-2022 Almacén de Vinos S.A.
-        </section>
-    </footer>
+    
+        <%- include("../partials/footer.ejs") %>
+    
 </body>
 
 </html>

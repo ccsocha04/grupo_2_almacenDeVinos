@@ -22,7 +22,7 @@ body {
 }
 
 
-img {
+.botella-vino {
   width: 100%;
 }
 
@@ -157,7 +157,7 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 48%;
+    padding-top: 10%;
     
 }
 
@@ -254,15 +254,7 @@ h2 {
 
 /* Footer */
 
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #111111;
-  color: #f6f6f6;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 .foot {
   display: flex;
@@ -318,7 +310,7 @@ footer {
     }
     
     .imagen {
-        width: 40%;
+        width: 47%;
     }
     
     .descripcion {
