@@ -19,32 +19,23 @@
     <main>
         <div class="container">
             <div class="first">
-                <img src="/img/wine2.jpg" alt="" class="img-vino">
-                <div class="wine">VINOS</div>
+                <img src="/img/wine6.jpg" alt="" class="img-vino">
+                <div class="wine"><p class="texto">VINOS</p></div>
             </div>
             <div class="second">
-                <img src="/img/beer2.jpg" alt="" class="">
-                <div class="beer">CERVEZAS</div>
+                <img src="/img/beer3.jpg" alt="" class="">
+                <div class="beer"><p class="texto">CERVEZAS</p></div>
             </div>
             <div class="tercero">
                 <img src="/img/wiskey2.jpg" alt="" class="">
-                <div class="wiskey">WISKEY</div>
+                <div class="wiskey"><p class="texto">WISKEY</p></div>
             </div>
          <div class="cuatro">
             <img src="/img/champ.jpg" alt="" class="">
-            <div class="champain">ESPUMANTES</div>
+            <div class="champain"><p class="texto">ESPUMANTES</p></div>
         </div>
         </div>
         <br>
-    <div class="banner-image">
-        <div class="banner-text">
-            <p>ALMACÉN DE VINOS</p>
-            <h1>Wine ONE LIFE</h1>
-            <a href="#productos">
-                <button> Productos</button>
-            </a>
-        </div>
-    </div>
     <main class="main-sections">
         <h2>Nuestras recomendaciones</h2>
         <section id="productos" class="productos">
@@ -71,68 +62,9 @@
                 <div class="">Precio</div>
                 <i class="fas fa-cart-arrow-down"></i>
             </article>
-            <article class="articulos">
-                <a href="/product-detail"><img src="/img/producto1.jpg"></a>
-                <p class="">Nombre del producto</p>
-                <div class="">Descripcion</div>
-                <div class="">Precio</div>
-                <i class="fas fa-cart-arrow-down"></i>
-            </article>
-            <article class="articulos">
-                <a href="/product-detail"><img src="/img/producto1.jpg"></a>
-                <p class="">Nombre del producto</p>
-                <div class="">Descripcion</div>
-                <div class="">Precio</div>
-                <i class="fas fa-cart-arrow-down"></i>
-            </article>
-            <article>
-                <div class="articulos">
-                    <a href="/product-detail"> <img src="/img/producto1.jpg"></a>
-                    <p class="">Nombre del producto</p>
-                    <div class="">Descripcion</div>
-                    <div class="">Precio</div>
-                    <i class="fas fa-cart-arrow-down"></i>
-                </div>
-            </article>
         </section>
     </main>
-    <footer>
-        <div class="content-footer">
-            <section class="section-card">
-                <a class="fa-buttom" href="">
-                    <i class="fa-solid fa-credit-card"></i>
-                </a>
-                <h3>Pagá con tarjeta o en efectivo</h3>
-                <p>
-                    Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                    puntos de pago. ¡Y siempre es seguro!
-                </p>
-            </section>
-            <section class="section-shipping">
-                <a class="fa-buttom" href="">
-                    <i class="fa-solid fa-truck-fast"></i>
-                </a>
-                <h3>Envío gratis desde $ 2.500</h3>
-                <p>
-                    Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                    productos. Es un beneficio de Mercado Puntos.
-                </p>
-            </section>
-            <section class="section-user">
-                <a class="fa-buttom" href="">
-                    <i class="fa-solid fa-user-lock"></i>
-                </a>
-                <h3>Seguridad, de principio a fin</h3>
-                <p>
-                    ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                    porque estás siempre protegid@.
-                </p>
-            </section>
-        </div>
-        <div class="copyright">
-            <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
-        </div>
-    </footer>
+    <%- include("partials/footer.ejs") %>
 </body>
 
 </html>

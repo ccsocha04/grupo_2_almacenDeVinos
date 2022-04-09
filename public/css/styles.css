@@ -20,7 +20,7 @@ html {
     padding-top: 5px;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: sticky;
     top: 0px;
     z-index: 2;
     width: 100%;
@@ -32,11 +32,11 @@ html {
 }
 
 .logo {
-    width: 240px;
+    width: 100%;
 }
 
-.main-header-logo {
-
+main {
+    background-color: #F6F6F6;
 }
 
 .topnav {
@@ -313,7 +313,7 @@ h2 {
 
 .imagen {
     width: 100%;
-    height: auto;
+
 }
 
 .article-separator {
@@ -356,11 +356,9 @@ h2 {
 
 .container {
   position: relative;
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1.5fr;
   grid-template-rows: 0fr 1fr 0fr;
-  margin-top: 157px;
 }
 
 .img-vino{
@@ -369,7 +367,8 @@ h2 {
 
 .container img {
   width: 100%;
-  height: 100%;
+  
+ 
 }
 
 .first {
@@ -378,6 +377,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: black;
 }
 
 .second {
@@ -386,10 +386,17 @@ h2 {
   justify-content: center;
 }
 
+.texto {
+    word-break: break-word;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
 .tercero {
     display: flex;
     align-items: center;
   justify-content: center;
+  background-color: #000000;
 }
 
 .cuatro {
@@ -409,15 +416,15 @@ display: flex;
   color: aliceblue;
   padding: 30px;
   background-color: rgba(30, 30,30, 0.6);
-  border-radius: 5px;
-  backdrop-filter: blur(1px);
+  border-radius: 0x;
+  backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .beer {
   position: absolute;
   display: flex;
-  width: 60%;
+  width: 75%;
   justify-content: center;
   align-items: center;
   color: aliceblue;
@@ -425,8 +432,8 @@ display: flex;
   grid-column: 3;
   padding: 10px;
   background-color: rgba(30, 30,30, 0.6);
-  border-radius: 5px;
-  backdrop-filter: blur(1px);
+  border-radius: 0px;
+  backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-sizing: content-box;
 }
@@ -442,9 +449,10 @@ display: flex;
   grid-column: 3;
   padding: 20px;
   background-color: rgba(30, 30,30, 0.6);
-  border-radius: 5px;
-  backdrop-filter: blur(1px);
+  border-radius: 0px;
+  backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: content-box;
 }
 
 .champain {
@@ -458,12 +466,31 @@ display: flex;
   grid-column: 2;
   padding: 20px;
   background-color: rgba(30, 30,30, 0.6);
-  border-radius: 5px;
-  backdrop-filter: blur(1px);
+  border-radius: 0px;
+  backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-sizing: content-box;
 }
 
+.copy {
+    text-align: center;
+}
+
+.banner-foot{
+    text-align: center;
+    background-color: white;
+}
+
+.img-foot {
+    max-width: 100%;
+}
+
+.cont-redes {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
 
 
 @media (min-width: 479) {
@@ -491,7 +518,7 @@ display: flex;
 
     .imagen {
         width: 14%;
-        height: auto;
+   
     }
 
     .content-footer {
@@ -550,7 +577,7 @@ display: flex;
 
     .imagen {
         width: 10%;
-        height: auto;
+
     }
   
   }
