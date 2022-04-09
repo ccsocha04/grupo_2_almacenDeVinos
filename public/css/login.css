@@ -22,17 +22,26 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
 }
 
 /* Add styles to the form container */
 .container {
-    position: absolute;
+    
+    position: relative;
     right: 0;
-    margin: 20px;
+    margin: auto;
     max-width: 300px;
     padding: 16px;
     background-color: white;
 }
+
+.login-sign {
+    display: flex;
+    justify-content: space-around;
+
+}
+
 
 /* Full-width input fields */
 input[type=text],
