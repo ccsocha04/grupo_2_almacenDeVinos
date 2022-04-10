@@ -126,7 +126,7 @@ li, a {
 h2 {
   text-align: center;
   color: #2f2f2f;
-  font-size: 18px;
+  font-size: 27px;
 }
 
 .productos {
@@ -199,6 +199,8 @@ h2 {
     padding: 5% 0px 0px 0px;
     
 }
+
+
 
 .precio-producto {
     font-size: 30px;

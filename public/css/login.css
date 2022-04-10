@@ -33,8 +33,9 @@ html {
     margin: auto;
     max-width: 300px;
     padding: 16px;
-    background-color: white;
+    background-color: #2f2f2f;
     border-radius: 15px;
+    color: #f6f6f6
 }
 
 .login-sign {
@@ -57,12 +58,12 @@ html {
 }
 
 .registra a {
-    color: black;
+    color: #f6f6f6;
     text-decoration: none;
 }
 
 .ingresa a {
-    color: black;
+    color: #f6f6f6;
     text-decoration: none;
 }
 
@@ -91,8 +92,8 @@ input[type=email]:focus {
 }
 
 .btn {
-    background-color: #04AA6D;
-    color: white;
+    background-color: tomato;
+    color: #f6f6f6;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
@@ -100,6 +101,7 @@ input[type=email]:focus {
     opacity: 0.9;
     font-size: 19px;
     border-radius: 15px;
+    font-weight: bold;
 }
 
 .btn:hover {
