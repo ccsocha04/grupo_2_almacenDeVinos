@@ -17,5 +17,7 @@ router.get("/signup", mainControllers.signup);
 
 router.get("/cart", mainControllers.cart);
 
+router.get("/crud", mainControllers.crud);
+
 
 module.exports = router;

@@ -502,6 +502,61 @@ display: flex;
     font-size: 30px;
 }
 
+.input-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px;
+    box-shadow: -3px -3px 6px gray;
+    width: 45%;
+  }
+
+  .create-search{
+      display: flex;
+      gap: 10px;
+  }
+
+  .create{
+    ox-shadow: -3px -3px 6px grey;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    box-shadow: -3px -3px 6px gray;
+  }
+
+  .user {
+      text-align: center;
+      font-size: 50px;
+  }
+
+  .cont-form{
+
+  }
+  .formulario {
+    display: flex;
+    justify-content: center;
+  }
+
+  .botones-form{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .boton {
+
+  }
+
+  fieldset{
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+    padding: 15px;
+  }
+
+  legend {
+    background: lightgray;
+    font-weight: bold;
+  }
 
 @media (min-width: 479) {
     /* .banner-image {

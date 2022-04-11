@@ -16,7 +16,10 @@ let mainControllers = {
 },
     cart: function(req, res){
     res.render("./products/cart");
-}
+},
+    crud: function(req, res){
+        res.render("./products/crud");
+    }
 }
 
 module.exports = mainControllers

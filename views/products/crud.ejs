@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/logottt.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/0a256d9d04.js" crossorigin="anonymous"></script>
+    <title>Wine ONE LIFE - Inicio</title>
+</head>
+
+<body>
+    <main class="main-sections">
+        <section class="section-article">
+            <div class="user"><i class="fas fa-user-circle"></i></div>
+            <h2>nombre usuario</h2><br>
+            <div class="create-search">
+            <div class="create">Crear producto - <i class="far fa-file-alt"></i></div>
+            <div class="input-search">
+                <form action="">
+                    <div><i class="fas fa-search"></i></div>
+                    <input type="text" placeholder="| Buscar producto" aria-label="search" />
+                    <button type="reset"><i class="fas fa-times"></i></button>
+                </form>
+            </div>
+        </div>
+
+            <div class="section-detail">
+                <article class="article-detail">
+                    <img class="imagen" src="/img/producto.jpg" alt="Producto">
+                    <div class="descripcion">
+                        <h5>Novocento</h5>
+                        <p>Vino tinto cabernet sauvignon novocento 750 ML</p>
+                    </div>
+                    <hr class="article-separator">
+                    <div class="info">
+                        <h5>Precio</h5>
+                        <p class="precios">$ 6.770</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </article>
+            </div>
+            <div class="cont-form">    
+            <form class="formulario" action="/" method="">
+                <fieldset>
+                    <legend>Alta de producto</legend>
+                    <div class="campo-form">
+                        <label for="nombre">Nombre del producto:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <br>
+                    <div class="campo-form">
+                    <label for="categoria">Categoria:</label>
+                    <select name="categoria" id="categoria">
+                        <option value="vino">Vinos</option>
+                        <option value="cerveza">Cervezas</option>
+                        <option value="whisky">Whisky</option>
+                        <option value="esp">Espumantes</option>
+                      </select>
+                    </div>
+                    <br>
+                    <div class="campo-form">
+                        <label for="precio">Precio:</label>
+                        <input type="text" name="precio" id="precio" placeholder="Precio" required>
+                    </div>
+                    <br>
+                    <div class="campo-form">
+                        <label for="descripcion">Descripción:</label>
+                        <input type="tex" name="descripcion" id="descripcion" placeholder="descripcion"
+                            required>
+                    </div>
+                    <br>
+                    <div class="campo-form">
+                        <label for="imageFile">Imagen de producto:</label>
+                        <input type="file" id="imageFile" accept="image/*">
+                    </div>
+                    <br>
+                    <div class="botones-form">
+                        <button class="boton" type="submit">Crear</button>
+                        <button class="boton-reset" type="reset">Borrar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        </section>
+    </main>
+</body>
