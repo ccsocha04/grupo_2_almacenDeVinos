@@ -9,10 +9,7 @@ body {
     /* font-family: Open Sans,Arial,Helvetica,sans-serif; */
 }
 
-body,
-html {
-  
-}
+
 
 .main-header {
     display: flex;
@@ -371,9 +368,7 @@ box-shadow:  20px 20px 60px #bebebe,
   grid-template-rows: 0fr 1fr 0fr;
 }
 
-.img-vino{
 
-}
 
 .container img {
   width: 100%;
@@ -518,7 +513,7 @@ display: flex;
   }
 
   .create{
-    ox-shadow: -3px -3px 6px grey;
+    box-shadow: -3px -3px 6px grey;
     background-color: white;
     display: flex;
     align-items: center;
@@ -531,9 +526,7 @@ display: flex;
       font-size: 50px;
   }
 
-  .cont-form{
-
-  }
+ 
   .formulario {
     display: flex;
     justify-content: center;
@@ -544,9 +537,6 @@ display: flex;
     justify-content: space-evenly;
   }
 
-  .boton {
-
-  }
 
   fieldset{
     box-shadow: 0px 0px 10px rgb(100 100 100);

@@ -129,21 +129,29 @@ h2 {
   font-size: 27px;
 }
 
+
+
 .productos {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 
+.art-oculto {
+  display: none;
+}
   
+
 .articulos {
-    width: 40%;
-    margin: auto;
-    padding-bottom: 5%;
-    
-  }
+  border-radius: 10px;
+background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+           -20px -20px 60px #ffffff;
+           padding: 10px;
+}
 
 
 
@@ -393,15 +401,22 @@ h2 {
     }
 
 
-    .articulos {
-      width: 30%;
-      margin-bottom: 10px;
-    }
+
+  
 
     .oculto {
       display: block;
     }
     
+
+    .art-oculto {
+      display: block;
+    }
+      
+
+
+
+
   }
   
   @media (min-width: 1024px) {
