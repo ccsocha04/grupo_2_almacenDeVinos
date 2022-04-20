@@ -292,10 +292,6 @@ box-shadow:  20px 20px 60px #bebebe,
     display: block;
     text-align: center;
   }
-.logo {
-  width: 100%;
-  text-align: center;
-}
 
 .barra-busqueda{
   max-width: none;
