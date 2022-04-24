@@ -13,7 +13,9 @@
 </head>
 
 
-    <form action="/products/create" method="post"  class="container">
+    <form action="/products/create" method="post" enctype="multipart/form-data" class="container">
+
+        
         <div class="login-sign"><div class="ingresa"><a href="/user">Ingresá</a></div> <div class="registra"> <a href="/user/signup"> Registrarse</a> </div> </div>
         <br>
 
@@ -36,7 +38,9 @@
     
         
          </div>
-        
+         
+         <label for="image"><b>Subir imagen del producto</b></label>
+         <input type="file"  name="image" required>
 
            
         <div class="boton">

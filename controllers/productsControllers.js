@@ -5,6 +5,8 @@ let path = require ("path")
 
 
 
+
+
 let productsControllers = {
     home: function(req, res){
          res.send("listado de productos");
@@ -31,7 +33,8 @@ let productsControllers = {
           description: req.body.description,
           price: req.body.price,
           category: req.body.category,
-          recom: req.body.recom
+          recom: req.body.recom,
+          image: req.file.filename
 
 
          }
