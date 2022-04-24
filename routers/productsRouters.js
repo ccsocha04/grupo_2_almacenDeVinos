@@ -14,6 +14,12 @@ router.get("/create", productsControllers.create);
 /*** EDIT ONE PRODUCT ***/ 
 router.get("/edit/:id", productsControllers.edit);
 router.patch("/edit/:id", productsControllers.update);
+router.post("/create", productsControllers.createpost);
+
+router.get("/edit", productsControllers.edit);
+
+
+
 
 /*** DELETE ONE PRODUCT***/ 
 router.delete('/delete/:id', productsControllers.destroy);

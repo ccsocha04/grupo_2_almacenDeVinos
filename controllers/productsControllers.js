@@ -6,6 +6,8 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 
 
+
+
 let productsControllers = {
 
     home: function(req, res){
@@ -21,20 +23,47 @@ let productsControllers = {
      },
 
     create: function(req, res){
-         res.send("crear producto"); 
-               },
+          res.render("./products/create"); 
+     },
+
+    createpost: function(req, res){
+
+         let nuevoProducto = {
+
+          
+          name: req.body.name,
+          description: req.body.description,
+          price: req.body.price,
+          category: req.body.category,
+          recom: req.body.recom
+
+         }
+
+
+         let archivoCatalogo = fs.readFileSync('./data/Productos.json', {encoding: 'utf-8'})
+         let catalogo = JSON.parse(archivoCatalogo)
+
+         catalogo.push(nuevoProducto)
+         
+         let productoCreado = JSON.stringify(catalogo)
+
+         fs.writeFileSync('./data/Productos.json', productoCreado )
+
+         res.redirect("/");     
+         
+    },
 
     edit: (req, res) => {
+
          let { id } = req.params;
          let editarProducto = products.find(product => product.id == id);
          res.render("./products/product-edit", { producto: editarProducto });
     },
 
     update: (req, res) => {
+
      let nom = req.body.nombre;
      res.send(nom);
-
-
 
     },
 
@@ -42,7 +71,6 @@ let productsControllers = {
           res.send("soy delete");
     }
 
-    
 }
 
 
