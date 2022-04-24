@@ -13,7 +13,7 @@
 </head>
 
 
-    <form action="/products/create" method="post"  class="container">
+    <form action="/products/create" method="post" enctype="multipart/form-data" class="container">
         <div class="login-sign"><div class="ingresa"><a href="/user">Ingresá</a></div> <div class="registra"> <a href="/user/signup"> Registrarse</a> </div> </div>
         <br>
 
@@ -30,17 +30,26 @@
         <input type="text" placeholder="categoria" name="category" required>
 
     
-        <div class="checkbox">
+        <!--<div class="checkbox">
         <input type="checkbox" name="recom" value="true">
-        <label for="recom" name="recom" class="condiciones">recomendado</a></label> 
+        <label for="recom" name="recom" class="condiciones">recomendado</a></label> -->
+
+        <p>recomendado</p>
+        <label for="recom">si</label>
+        <input type="radio" name="recom" value= true>
+        <label for="recom">no</label>
+        <input type="radio" name="recom" value= false>
     
         
          </div>
+
+         <label for="image"><b>Subir imagen del producto</b></label>
+         <input type="file"  name="image" required>
         
 
            
         <div class="boton">
-        <button type="submit" class="btn">Crear usuario</button></div>
+        <button type="submit" class="btn">Crear producto</button></div>
 
     
 

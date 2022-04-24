@@ -24,36 +24,40 @@ let productsControllers = {
 
     createpost: function(req, res){
 
-         let nuevoProducto = {
-
-          
-          name: req.body.name,
-          description: req.body.description,
-          price: req.body.price,
-          category: req.body.category,
-          recom: req.body.recom
-
-
-         }
-
          
 
          let archivoCatalogo = fs.readFileSync('./data/Productos.json', {encoding: 'utf-8'})
 
          let catalogo = JSON.parse(archivoCatalogo)
 
-         
+         let ultProducto = catalogo.slice(-1)
 
+         let idUltProducto = ultProducto[0].id
+
+     
+
+         let nuevoProducto = {
+
+          id: idUltProducto+1,
+          name: req.body.name,
+          description: req.body.description,
+          price: req.body.price,
+          category: req.body.category,
+          recom: req.body.recom,
+          image: req.file.filename
+
+
+         }
+
+      
+         
          catalogo.push(nuevoProducto)
          
          let productoCreado = JSON.stringify(catalogo)
 
 
          
-
          fs.writeFileSync('./data/Productos.json', productoCreado )
-
-
 
 
 
