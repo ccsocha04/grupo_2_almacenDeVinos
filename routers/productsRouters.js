@@ -11,6 +11,8 @@ router.get("/cart", productsControllers.cart);
 
 router.get("/create", productsControllers.create);
 
+router.post("/create", productsControllers.createpost);
+
 router.get("/edit", productsControllers.edit);
 
 
