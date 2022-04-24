@@ -57,7 +57,7 @@ let productsControllers = {
 
 
 
-         res.redirect("crear producto");
+         res.redirect("/");
          
          
     },
