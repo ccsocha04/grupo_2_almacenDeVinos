@@ -11,11 +11,12 @@ router.get("/cart", productsControllers.cart);
 
 router.get("/create", productsControllers.create);
 
-router.get("/edit", productsControllers.edit);
+/*** EDIT ONE PRODUCT ***/ 
+router.get("/edit/:id", productsControllers.edit);
+router.patch("/edit/:id", productsControllers.update);
 
-
-
-
+/*** DELETE ONE PRODUCT***/ 
+router.delete('/delete/:id', productsControllers.destroy);
 
 
 module.exports = router;

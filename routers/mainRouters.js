@@ -9,7 +9,7 @@ router.get("/home", mainControllers.home);
 
 router.get("/home_", mainControllers.home_);
 
-router.get("/crud", mainControllers.crud);
+
 
 
 module.exports = router;

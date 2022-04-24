@@ -14,11 +14,12 @@
 
 <body>
     <main class="main-sections">
+
         <section class="section-article">
             <div class="user"><i class="fas fa-user-circle"></i></div>
             <h2>nombre usuario</h2><br>
             <div class="create-search">
-            <div class="create">Crear producto - <i class="far fa-file-alt"></i></div>
+           
             <div class="input-search">
                 <form action="">
                     <div><i class="fas fa-search"></i></div>
@@ -30,36 +31,34 @@
 
             <div class="section-detail">
                 <article class="article-detail">
-                    <img class="imagen" src="/img/producto.jpg" alt="Producto">
+                    <img class="imagen" src="/img/<%=producto.image %>" alt="Producto">
                     <div class="descripcion">
-                        <h5>Novocento</h5>
-                        <p>Vino tinto cabernet sauvignon novocento 750 ML</p>
+                        <h1><%=producto.name%></h1>
+                        <p><%=producto.description%></p>
                     </div>
                     <hr class="article-separator">
                     <div class="info">
                         <h5>Precio</h5>
-                        <p class="precios">$ 6.770</p>
+                        <p class="precios">$ <%=producto.price%></p>
                     </div>
                     <div>
-                        <i class="fas fa-edit"></i>
+                        
                     </div>
-                    <div>
-                        <i class="fas fa-trash-alt"></i>
-                    </div>
+                   
                 </article>
             </div>
             <div class="cont-form">    
-            <form class="formulario" action="/" method="">
+            <form class="formulario"  method="POST" action="/products/edit/:id?_method=PATCH">
                 <fieldset>
-                    <legend>Alta de producto</legend>
+                    <legend>Editar producto - <i class="fas fa-edit"></i></legend>
                     <div class="campo-form">
                         <label for="nombre">Nombre del producto:</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                        <input type="text" name="nombre" id="nombre" value="<%=producto.name%>">
                     </div>
                     <br>
                     <div class="campo-form">
-                    <label for="categoria">Categoria:</label>
-                    <select name="categoria" id="categoria">
+                    <label for="categoria" >Categoria:</label>
+                    <select name="categoria" id="categoria" value="<%=producto.description%>">
                         <option value="vino">Vinos</option>
                         <option value="cerveza">Cervezas</option>
                         <option value="whisky">Whisky</option>
@@ -69,13 +68,12 @@
                     <br>
                     <div class="campo-form">
                         <label for="precio">Precio:</label>
-                        <input type="text" name="precio" id="precio" placeholder="Precio" required>
+                        <input type="text" name="precio" id="precio" value="<%=producto.price%>" required>
                     </div>
                     <br>
                     <div class="campo-form">
-                        <label for="descripcion">Descripción:</label>
-                        <input type="tex" name="descripcion" id="descripcion" placeholder="descripcion"
-                            required>
+                            <label for="descripcion">Descripcion</label><br>
+                            <textarea id="descripcion" name="descripcion" rows="4" cols="50" placeholder="<%=producto.description%>"></textarea>
                     </div>
                     <br>
                     <div class="campo-form">
@@ -84,8 +82,14 @@
                     </div>
                     <br>
                     <div class="botones-form">
-                        <button class="boton" type="submit">Crear</button>
-                        <button class="boton-reset" type="reset">Borrar</button>
+                        <button class="boton" type="submit">Guardar</button>
+                        
+                        <form method="POST" action="/products/delete/:id?_method=DELETE">
+                        <button class="boton-delete" type="submit">Borrar</button>
+                        </form>
+                        <div>
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
                     </div>
                 </fieldset>
             </form>
