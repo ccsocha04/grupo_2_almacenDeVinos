@@ -8,6 +8,8 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 
 
+
+
 let productsControllers = {
 
     home: function(req, res){
@@ -28,6 +30,7 @@ let productsControllers = {
 
     createpost: function(req, res){
 
+<<<<<<< HEAD
          let nuevoProducto = {
 
           
@@ -39,17 +42,55 @@ let productsControllers = {
 
          }
 
+=======
+>>>>>>> 8680dfb51d90bd6fdae09ffe191ac4cf3558823f
 
+     
          let archivoCatalogo = fs.readFileSync('./data/Productos.json', {encoding: 'utf-8'})
          let catalogo = JSON.parse(archivoCatalogo)
 
+<<<<<<< HEAD
+=======
+         let ultProducto = catalogo.slice(-1)
+
+         let idUltProducto = ultProducto[0].id
+
+     
+
+         let nuevoProducto = {
+
+          id: idUltProducto+1,
+          name: req.body.name,
+          description: req.body.description,
+          price: req.body.price,
+          category: req.body.category,
+          recom: req.body.recom,
+          image: req.file.filename
+
+
+         }
+
+      
+         
+>>>>>>> 8680dfb51d90bd6fdae09ffe191ac4cf3558823f
          catalogo.push(nuevoProducto)
          
          let productoCreado = JSON.stringify(catalogo)
 
+<<<<<<< HEAD
          fs.writeFileSync('./data/Productos.json', productoCreado )
 
          res.redirect("/");     
+=======
+
+         
+         fs.writeFileSync('./data/Productos.json', productoCreado )
+
+
+
+         res.redirect("/");
+         
+>>>>>>> 8680dfb51d90bd6fdae09ffe191ac4cf3558823f
          
     },
 

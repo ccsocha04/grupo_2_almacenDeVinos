@@ -19,7 +19,11 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.3",
+<<<<<<< HEAD
     "method-override": "^3.0.0",
+=======
+    "multer": "^1.4.4",
+>>>>>>> 8680dfb51d90bd6fdae09ffe191ac4cf3558823f
     "nodemon": "^2.0.15"
   }
 }
