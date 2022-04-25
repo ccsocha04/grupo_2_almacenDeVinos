@@ -7,58 +7,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/img/logottt.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/create.css">
     
     <script src="https://kit.fontawesome.com/0a256d9d04.js" crossorigin="anonymous"></script>
     <title>Wine ONE LIFE - Inicio</title>
 </head>
 
-
+    <div class="contenedor-formulario">
     <form action="/products/create" method="post" enctype="multipart/form-data" class="container">
-<<<<<<< HEAD
-=======
 
-        
->>>>>>> bcecab9f25acf6a677feb8730fc989eeea0c0173
-        <div class="login-sign"><div class="ingresa"><a href="/user">Ingresá</a></div> <div class="registra"> <a href="/user/signup"> Registrarse</a> </div> </div>
-        <br>
-
-        <label for="name"><b>Nombre:</b></label><br>
+      
+        <div>
+        <label for="name"><b>Nombre:</b></label>
         <input type="text" name="name" id="name" placeholder="Nombre" required />
+        </div>
 
-        <label for="description"><b>descripcion del producto:</b></label>
+        <div>
+        <label for="description"><b>Descripcion del producto:</b></label>
+        </div>
+        <div>
         <textarea id="description" name="description"></textarea>
+        </div>
 
+        <div>
         <label for="price"><b>Precio</b></label>
-        <input type="text" placeholder="precio" name="price" required>
+        <input type="number" placeholder="precio" name="price" required>
+        </div>
 
-        <label for="category"><b>Categoria</b></label>
-        <input type="text" placeholder="categoria" name="category" required>
+        <div>
+        <label for="category"><b>Seleccionar categoría</b></label>
+        <select name="category" required>
+            <option value="vinos">vinos</option>
+            <option value="cervezas">cervezas</option>
+            <option value="licores">licores</option>
+            <option value="otros">otros</option>
+            
+        </select>
+        </div>
 
     
-        <!--<div class="checkbox">
-        <input type="checkbox" name="recom" value="true">
-        <label for="recom" name="recom" class="condiciones">recomendado</a></label> -->
-
-        <p>recomendado</p>
+        <div>
+        <p>¿Producto recomendado?</p>
         <label for="recom">si</label>
         <input type="radio" name="recom" value= true>
         <label for="recom">no</label>
         <input type="radio" name="recom" value= false>
+        </div>
     
         
-         </div>
-
+         
+         <div>
          <label for="image"><b>Subir imagen del producto</b></label>
          <input type="file"  name="image" required>
+         </div>
         
 
            
-        <div class="boton">
-        <button type="submit" class="btn">Crear producto</button></div>
+         <div>
+         <button type="submit" class="boton">Crear producto</button>
+         </div>
 
     
 
     </form>
+
+</div>
 
 
 <body>

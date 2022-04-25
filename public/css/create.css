@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("/img/wine2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    
+    
+
+    
+}
+
+.contenedor-formulario {
+   
+    background-color: rgb(159, 158, 158, 0.9);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 40%;
+    margin: auto;
+    justify-content: space-between;
+    font-size: 20px;
+    
+    
+    
+
+}
+
+.contenedor-formulario div {
+    
+    color: white;
+    text-align: left;
+    margin-bottom: 2%;
+    margin-left: 1%;
+}
+
+.contenedor-formulario textarea {
+
+    width: 50%;
+    height: 75px;
+
+}
+
+.boton {
+    margin-left: 41%;
+    height: 25px;
+   
+    
+}
