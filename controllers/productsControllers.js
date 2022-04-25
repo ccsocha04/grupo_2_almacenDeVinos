@@ -62,8 +62,14 @@ let productsControllers = {
 
     update: (req, res) => {
 
-     let nom = req.body.nombre;
-     res.send(nom);
+//   productoEditado[id] = req.body.id;
+     productoEditado[id] = req.body.nombre;
+     productoEditado[id] = req.body.description;
+     productoEditado[id] = req.body.price;
+     productoEditado[id] = req.body.category;
+     productoEditado[id] = req.body.image;
+     productoEditado[id] = req.body.recom;
+
 
     },
 
