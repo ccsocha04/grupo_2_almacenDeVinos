@@ -1,27 +1,23 @@
-var express = require('express');
-var router = express.Router();
-
-let path = require ("path")
-
+const express = require('express');
+const router = express.Router();
+const multer = require ("multer")
+const path = require ("path")
 const productsControllers = require("../controllers/productsControllers.js");
 
-const multer = require ("multer")
 
-let multerDiskStorage = multer.diskStorage({
 
-    destination: (req, file, callback) => {
-        let folder = path.join(__dirname, "../public/img");
-
-        callback(null, folder);
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, path.join(__dirname, '../public/img'));
     },
 
-    filename: (req, file, callback) => {
+    filename: (req, file, cb) => {
         let imageName = Date.now() + path.extname(file.originalname);
-        callback (null, imageName)
+        cb (null, imageName);
     }
-})
+});
 
-let fileUpload = multer ({ storage: multerDiskStorage});
+const fileUpload = multer ({ storage });
 
 
 
@@ -36,14 +32,11 @@ router.get("/create", productsControllers.create);
 
 /*** EDIT ONE PRODUCT ***/ 
 router.get("/edit/:id", productsControllers.edit);
-router.patch("/edit/:id", productsControllers.update);
+router.patch("/edit/:id", fileUpload.single("image"), productsControllers.update);
 router.post("/create", productsControllers.createpost);
 router.post("/create", fileUpload.single("image"), productsControllers.createpost);
 
 router.get("/edit", productsControllers.edit);
-
-
-
 
 /*** DELETE ONE PRODUCT***/ 
 router.delete('/delete/:id', productsControllers.destroy);

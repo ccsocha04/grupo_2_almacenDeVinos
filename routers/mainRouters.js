@@ -7,7 +7,6 @@ router.get("/", mainControllers.home);
 
 router.get("/home", mainControllers.home);
 
-router.get("/home_", mainControllers.home_);
 
 
 

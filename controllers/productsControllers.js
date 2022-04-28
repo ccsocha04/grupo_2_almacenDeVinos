@@ -1,124 +1,115 @@
 const fs = require('fs');
 const path = require('path');
 
-const productsFilePath = path.join(__dirname, '../data/Productos.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-
-
-
-
-
-
+let productsFilePath = path.join(__dirname, '../data/Productos.json');
+let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 let productsControllers = {
 
-    home: function(req, res){
-         res.send("listado de productos");
-         },
-
-    detalleProducto: function(req, res){
-         res.render("./products/product-detail"); 
-         },
-     
-    cart: function(req, res){
-          res.render("./products/cart"); 
+     home: function (req, res) {
+          res.send("listado de productos");
      },
 
-    create: function(req, res){
-          res.render("./products/create"); 
+     detalleProducto: function (req, res) {
+          res.render("./products/product-detail");
      },
 
-    createpost: function(req, res){
+     cart: function (req, res) {
+          res.render("./products/cart");
+     },
 
-<<<<<<< HEAD
-         let nuevoProducto = {
+     create: function (req, res) {
+          res.render("./products/create");
+     },
+
+     createpost: function (req, res) {
+
+          let nuevoProducto = {
+
+               name: req.body.name,
+               description: req.body.description,
+               price: req.body.price,
+               category: req.body.category,
+               recom: req.body.recom
+          }
+
 
           
-          name: req.body.name,
-          description: req.body.description,
-          price: req.body.price,
-          category: req.body.category,
-          recom: req.body.recom
 
-         }
+          let archivoCatalogo = fs.readFileSync('./data/Productos.json', { encoding: 'utf-8' })
+          let catalogo = JSON.parse(archivoCatalogo)
 
-=======
->>>>>>> 8680dfb51d90bd6fdae09ffe191ac4cf3558823f
+          catalogo.push(nuevoProducto)
 
-     
-         let archivoCatalogo = fs.readFileSync('./data/Productos.json', {encoding: 'utf-8'})
-         let catalogo = JSON.parse(archivoCatalogo)
+          let productoCreado = JSON.stringify(catalogo)
 
-<<<<<<< HEAD
-=======
-         let ultProducto = catalogo.slice(-1)
+          fs.writeFileSync('./data/Productos.json', productoCreado)
 
-         let idUltProducto = ultProducto[0].id
+          res.redirect("/");
 
-     
+     },
 
-         let nuevoProducto = {
+     edit: (req, res) => {
 
-          id: idUltProducto+1,
-          name: req.body.name,
-          description: req.body.description,
-          price: req.body.price,
-          category: req.body.category,
-          recom: req.body.recom,
-          image: req.file.filename
+          let { id } = req.params;
+          let editarProducto = products.find(product => product.id == id);
+          res.render("./products/product-edit", { producto: editarProducto });
+     },
 
+     update: (req, res) => {
 
-         }
+          let archivoCatalogo = fs.readFileSync('./data/Productos.json', { encoding: 'utf-8' });
+          let catalogo = JSON.parse(archivoCatalogo);
 
-      
-         
->>>>>>> 8680dfb51d90bd6fdae09ffe191ac4cf3558823f
-         catalogo.push(nuevoProducto)
-         
-         let productoCreado = JSON.stringify(catalogo)
+          let stringValue = req.body.recom;
+          let boolValue = (stringValue == "true"); //returns true or false    
 
-<<<<<<< HEAD
-         fs.writeFileSync('./data/Productos.json', productoCreado )
+          let productoEditado = {
 
-         res.redirect("/");     
-=======
+               id: Number(req.body.id),
+               name: req.body.nombre,
+               description: req.body.descripcion,
+               price: req.body.precio,
+               category: req.body.categoria,
+              // image: req.file.filename,
+               recom: boolValue,
+          }
 
-         
-         fs.writeFileSync('./data/Productos.json', productoCreado )
+           if (req.file){
+               if (req.file.filename){
+                    productoEditado.image = req.file.filename;
+               }
+          };
 
 
+          let index = catalogo.findIndex(catalogo => catalogo.id === productoEditado.id);
 
-         res.redirect("/");
-         
->>>>>>> 8680dfb51d90bd6fdae09ffe191ac4cf3558823f
-         
-    },
+          catalogo[index] = productoEditado;
 
-    edit: (req, res) => {
+          console.log(catalogo);
 
-         let { id } = req.params;
-         let editarProducto = products.find(product => product.id == id);
-         res.render("./products/product-edit", { producto: editarProducto });
-    },
+          let producto = JSON.stringify(catalogo, null, 4);
 
-    update: (req, res) => {
+          fs.writeFileSync('./data/Productos.json', producto);
 
-//   productoEditado[id] = req.body.id;
-     productoEditado[id] = req.body.nombre;
-     productoEditado[id] = req.body.description;
-     productoEditado[id] = req.body.price;
-     productoEditado[id] = req.body.category;
-     productoEditado[id] = req.body.image;
-     productoEditado[id] = req.body.recom;
+          res.render("./products/product-edit", { producto: productoEditado });
 
+     },
 
-    },
+     destroy: (req, res) => {
 
-    destroy: (req, res) => {
-          res.send("soy delete");
-    }
+          let archivoCatalogo = fs.readFileSync('./data/Productos.json', { encoding: 'utf-8' });
+          let catalogo = JSON.parse(archivoCatalogo);
+
+          let nuevoCatalogo = catalogo.filter(producto => producto.id != req.params.id);
+
+          catalogo = JSON.stringify(nuevoCatalogo, null, 4);
+
+          fs.writeFileSync('./data/Productos.json', catalogo);
+
+          res.send("producto eliminado");
+     }
 
 }
-
 
 module.exports = productsControllers

@@ -14,87 +14,101 @@
 
 <body>
     <main class="main-sections">
-
         <section class="section-article">
             <div class="user"><i class="fas fa-user-circle"></i></div>
             <h2>nombre usuario</h2><br>
             <div class="create-search">
-           
-            <div class="input-search">
-                <form action="">
-                    <div><i class="fas fa-search"></i></div>
-                    <input type="text" placeholder="| Buscar producto" aria-label="search" />
-                    <button type="reset"><i class="fas fa-times"></i></button>
-                </form>
+                <div class="input-search">
+                    <form action="">
+                        <div><i class="fas fa-search"></i></div>
+                        <input type="text" placeholder="| Buscar producto" aria-label="search" />
+                        <button type="reset"><i class="fas fa-times"></i></button>
+                    </form>
+                </div>
             </div>
-        </div>
-
             <div class="section-detail">
                 <article class="article-detail">
-                    <img class="imagen" src="/img/<%=producto.image %>" alt="Producto">
+                    <img class="imagen-editar" src="/img/<%=producto.image %>" alt="Producto">
                     <div class="descripcion">
-                        <h1><%=producto.name%></h1>
-                        <p><%=producto.description%></p>
+                        <h1>
+                            <%=producto.name%>
+                        </h1>
+                        <p>
+                            <%=producto.description%>
+                        </p>
                     </div>
                     <hr class="article-separator">
                     <div class="info">
                         <h5>Precio</h5>
-                        <p class="precios">$ <%=producto.price%></p>
+                        <p class="precios">$ <%=producto.price%>
+                        </p>
                     </div>
-                    <div>
-                        
-                    </div>
-                   
                 </article>
             </div>
-            <div class="cont-form">    
-            <form class="formulario"  method="POST" action="/products/edit/:id?_method=PATCH">
-                <fieldset>
-                    <legend>Editar producto - <i class="fas fa-edit"></i></legend>
-                    <div class="campo-form">
-                        <label for="nombre">Nombre del producto:</label>
-                        <input type="text" name="nombre" id="nombre" value="<%=producto.name%>">
-                    </div>
-                    <br>
-                    <div class="campo-form">
-                    <label for="categoria" >Categoria:</label>
-                    <select name="categoria" id="categoria" value="<%=producto.description%>">
-                        <option value="vino">Vinos</option>
-                        <option value="cerveza">Cervezas</option>
-                        <option value="whisky">Whisky</option>
-                        <option value="esp">Espumantes</option>
-                      </select>
-                    </div>
-                    <br>
-                    <div class="campo-form">
-                        <label for="precio">Precio:</label>
-                        <input type="text" name="precio" id="precio" value="<%=producto.price%>" required>
-                    </div>
-                    <br>
-                    <div class="campo-form">
-                            <label for="descripcion">Descripcion</label><br>
-                            <textarea id="descripcion" name="descripcion" rows="4" cols="50" placeholder="<%=producto.description%>"></textarea>
-                    </div>
-                    <br>
-                    <div class="campo-form">
-                        <label for="imageFile">Imagen de producto:</label>
-                        <input type="file" id="imageFile" accept="image/*">
-                    </div>
-                    <br>
-                    <div class="botones-form">
-                        <button class="boton" type="submit">Guardar</button>
-                        
-                        <form method="POST" action="/products/delete/:id?_method=DELETE">
-                        <button class="boton-delete" type="submit">Borrar</button>
-                        </form>
-                        <div>
-                            <i class="fas fa-trash-alt"></i>
+            <div class="cont-form">
+                <form class="formulario" method="POST" action="/products/edit/:id?_method=PATCH"
+                    enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Editar producto - <i class="fas fa-edit"></i></legend>
+                        <div class="campo-form">
+                            <label for="id">ID producto:</label>
+                            <input type="number" name="id" id="id" value="<%=producto.id%>" readonly>
                         </div>
+                        <div class="campo-form">
+                            <label for="nombre">Nombre del producto:</label>
+                            <input type="text" name="nombre" id="nombre" value="<%=producto.name%>">
+                        </div>
+                        <br>
+                        <div class="campo-form">
+                            <p>
+                                <%=producto.category%>
+                            </p>
+                            <label for="categoria">Categoria:</label>
+                            <select name="categoria" id="categoria">
+                                <option value="vino"> Vinos</option>
+                                <option value="cerveza">Cervezas</option>
+                                <option value="whisky">Whisky</option>
+                                <option value="esp">Espumantes</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="campo-form">
+                            <label for="precio">Precio:</label>
+                            <input type="number" name="precio" id="precio" value="<%=producto.price%>">
+                        </div>
+                        <br>
+                        <div class="campo-form">
+                            <label for="descripcion">Descripcion</label><br>
+                            <textarea id="descripcion" name="descripcion" rows="5" cols="50"
+                                placeholder="desc"> 
+                            <%=producto.description%>
+                            </textarea>
+                        </div>
+                        <br>
+                        <div class="campo-form">
+                            <label for="image">Imagen de producto:</label>
+                            <input type="file" id="image" name="image" accept="image/*">
+                        </div>
+                        <br>
+                        <p>Producto recomendado:</p>
+                        <label for="recomendado">Si</label>
+                        <input type="radio" name=recomendado value=true>
+                        <label for="recomendado">No</label>
+                        <input type="radio" name="recomendado" value=false>
+                        <br>
+                        <div class="botones-form">
+                            <button class="boton" type="submit">Guardar</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <form class="formulario" method="POST" action="/products/delete/<%=producto.id%>?_method=DELETE"
+                    enctype="multipart/form-data">
+                    <button class="boton-delete" type="submit">Borrar</button>
+                    <div>
+                        <i class="fas fa-trash-alt"></i>
                     </div>
-                </fieldset>
-            </form>
-        </div>
-
+                </form>
+            </div>
         </section>
     </main>
 </body>

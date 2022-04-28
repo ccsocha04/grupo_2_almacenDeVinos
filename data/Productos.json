@@ -1,3 +1,37 @@
-[{"id":1,"name":"Gold en Monkey","description":"erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum","price":4530.49,"category":"espumante","image":"PRODUCTS-product_f_i_filtro_detalle_tacita.jpg", "recom":"true"},
-{"id":2,"name":"Gold en Monkey","description":"tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis","price":2743.55,"category":"espumante","image":"PRODUCTS-golden-monkey.jpg", "recom":"false"},
-{"id":3,"name":"Rooibos Caramelo","description":"lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut","price":732.99,"category":"cerveza","image":"producto11.png", "recom":"true"}]
+[
+    {
+        "id": 1,
+        "name": "producto 1",
+        "description": "desc p 1",
+        "price": "11",
+        "category": "vino",
+        "image": "producto11.png",
+        "recom": true
+    },
+    {
+        "id": 2,
+        "name": "producto 2",
+        "description": " \r\n                            desc p 2\r\n                            ",
+        "price": "50",
+        "category": "vino",
+        "recom": false
+    },
+    {
+        "id": 3,
+        "name": "producto 3",
+        "description": "desc p 3",
+        "price": "33",
+        "category": "vino",
+        "image": "producto11.png",
+        "recom": true
+    },
+    {
+        "id": 4,
+        "name": "producto 4",
+        "description": " \r\n                            desc p 4\r\n                            ",
+        "price": "100",
+        "category": "vino",
+        "image": "1651113226765.png",
+        "recom": false
+    }
+]
