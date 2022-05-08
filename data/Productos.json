@@ -14,6 +14,7 @@
         "description": "desc p 2",
         "price": "50",
         "category": "vino",
+        "image": "producto11.png",
         "recom": false
     },
     {
@@ -22,6 +23,7 @@
         "description": "descrip producto n 3 modif",
         "price": "33",
         "category": "vino",
+        "image": "producto11.png",
         "recom": false
     },
     {
@@ -30,7 +32,7 @@
         "description": "desc p 4",
         "price": "100",
         "category": "vino",
-        "image": "1651113226765.png",
+        "image": "producto11.png",
         "recom": false
     }
 ]
