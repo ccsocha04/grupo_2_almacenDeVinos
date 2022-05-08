@@ -11,7 +11,7 @@
     {
         "id": 2,
         "name": "producto 2",
-        "description": " \r\n                            desc p 2\r\n                            ",
+        "description": "desc p 2",
         "price": "50",
         "category": "vino",
         "recom": false
@@ -19,16 +19,15 @@
     {
         "id": 3,
         "name": "producto 3",
-        "description": "desc p 3",
+        "description": "descrip producto n 3 modif",
         "price": "33",
         "category": "vino",
-        "image": "producto11.png",
-        "recom": true
+        "recom": false
     },
     {
         "id": 4,
         "name": "producto 4",
-        "description": " \r\n                            desc p 4\r\n                            ",
+        "description": "desc p 4",
         "price": "100",
         "category": "vino",
         "image": "1651113226765.png",
