@@ -19,6 +19,11 @@ const storage = multer.diskStorage({
 
 const fileUpload = multer ({ storage });
 
+const {body} = require("express-validator")
+
+const checkError = [body("name").notEmpty().withMessage("el nombre, genio")]
+
+
 
 
 
@@ -30,11 +35,14 @@ router.get("/cart", productsControllers.cart);
 
 router.get("/create", productsControllers.create);
 
+router.post("/create",fileUpload.single("image"), checkError, productsControllers.createpost);
+
+
 /*** EDIT ONE PRODUCT ***/ 
 router.get("/edit/:id", productsControllers.edit);
 router.patch("/edit/:id", fileUpload.single("image"), productsControllers.update);
-router.post("/create", productsControllers.createpost);
-router.post("/create", fileUpload.single("image"), productsControllers.createpost);
+
+
 
 router.get("/edit", productsControllers.edit);
 
