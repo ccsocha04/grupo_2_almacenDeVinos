@@ -24,28 +24,61 @@ let productsControllers = {
 
      createpost: function (req, res) {
 
-          let nuevoProducto = {
 
-               name: req.body.name,
-               description: req.body.description,
-               price: req.body.price,
-               category: req.body.category,
-               recom: req.body.recom
+          let error = validationResult(req)
+
+          console.log(error)
+
+          if (error.isEmpty()) {
+
+               let archivoCatalogo = fs.readFileSync('./data/Productos.json', { encoding: 'utf-8' })
+
+               let catalogo = JSON.parse(archivoCatalogo)
+
+               let ultProducto = catalogo.slice(-1)
+
+               let idUltProducto = ultProducto[0].id
+
+
+
+               let nuevoProducto = {
+
+                    id: idUltProducto + 1,
+                    name: req.body.name,
+                    description: req.body.description,
+                    price: req.body.price,
+                    category: req.body.category,
+                    recom: req.body.recom,
+                   
+
+
+               }
+
+               if (req.file){
+                    if (req.file.filename){
+                         nuevoProducto.image = req.file.filename
+                    }
+               }
+
+
+
+               catalogo.push(nuevoProducto)
+
+               let productoCreado = JSON.stringify(catalogo, null, 4)
+
+
+
+               fs.writeFileSync('./data/Productos.json', productoCreado)
+
+
+
+               res.redirect("/");
           }
 
+          else {
+               res.render("./products/create", { errors: error.array() })
+          }
 
-          
-
-          let archivoCatalogo = fs.readFileSync('./data/Productos.json', { encoding: 'utf-8' })
-          let catalogo = JSON.parse(archivoCatalogo)
-
-          catalogo.push(nuevoProducto)
-
-          let productoCreado = JSON.stringify(catalogo)
-
-          fs.writeFileSync('./data/Productos.json', productoCreado)
-
-          res.redirect("/");
 
      },
 
