@@ -24,7 +24,6 @@ let productsControllers = {
 
      createpost: function (req, res) {
 
-
           let error = validationResult(req)
 
           console.log(error)
@@ -39,8 +38,6 @@ let productsControllers = {
 
                let idUltProducto = ultProducto[0].id
 
-
-
                let nuevoProducto = {
 
                     id: idUltProducto + 1,
@@ -49,36 +46,24 @@ let productsControllers = {
                     price: req.body.price,
                     category: req.body.category,
                     recom: req.body.recom,
-                   
-
-
                }
 
-               if (req.file){
-                    if (req.file.filename){
+               if (req.file) {
+                    if (req.file.filename) {
                          nuevoProducto.image = req.file.filename
                     }
                }
 
-
-
                catalogo.push(nuevoProducto)
 
                let productoCreado = JSON.stringify(catalogo, null, 4)
-
-
-
                fs.writeFileSync('./data/Productos.json', productoCreado)
-
-
-
                res.redirect("/");
           }
 
           else {
                res.render("./products/create", { errors: error.array() })
           }
-
 
      },
 
@@ -104,16 +89,15 @@ let productsControllers = {
                description: req.body.descripcion,
                price: req.body.precio,
                category: req.body.categoria,
-              // image: req.file.filename,
+               // image: req.file.filename,
                recom: boolValue,
           }
 
-           if (req.file){
-               if (req.file.filename){
+          if (req.file) {
+               if (req.file.filename) {
                     productoEditado.image = req.file.filename;
                }
           };
-
 
           let index = catalogo.findIndex(catalogo => catalogo.id === productoEditado.id);
 
@@ -142,7 +126,6 @@ let productsControllers = {
 
           res.send("producto eliminado");
      }
-
 }
 
 module.exports = productsControllers

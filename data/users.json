@@ -1,3 +1,77 @@
-[{"id":1,"firstName":"Derek","lastName":"Mellon","email":"dmellon0@pcworld.com","password":"ak7VV6","category":"Prefabricated Aluminum Metal Canopies","image":"Landscaping & Irrigation"},
-{"id":2,"firstName":"Portie","lastName":"Gayther","email":"pgayther1@blogspot.com","password":"EJY1frswIyuY","category":"Casework","image":"Waterproofing & Caulking"},
-{"id":3,"firstName":"Juanita","lastName":"Loudian","email":"jloudian2@mediafire.com","password":"kesmI2","category":"Rebar & Wire Mesh Install","image":"Drywall & Acoustical (FED)"}]
+[
+    {
+        "id": 1,
+        "firstName": "Derek",
+        "lastName": "Mellon",
+        "email": "dmellon0@pcworld.com",
+        "password": "ak7VV6",
+        "category": "Prefabricated Aluminum Metal Canopies",
+        "image": "Landscaping & Irrigation"
+    },
+    {
+        "id": 2,
+        "firstName": "Portie",
+        "lastName": "Gayther",
+        "email": "pgayther1@blogspot.com",
+        "password": "EJY1frswIyuY",
+        "category": "Casework",
+        "image": "Waterproofing & Caulking"
+    },
+    {
+        "id": 3,
+        "firstName": "Juanita",
+        "lastName": "Loudian",
+        "email": "jloudian2@mediafire.com",
+        "password": "kesmI2",
+        "category": "Rebar & Wire Mesh Install",
+        "image": "Drywall & Acoustical (FED)"
+    },
+    {
+        "id": 4,
+        "image": "userImgDefault.png",
+        "firstName": "JUAN jo",
+        "lastName": "GIMENEZ",
+        "email": "mdqgimenez@gmail.com",
+        "password": "12345"
+    },
+    {
+        "id": 5,
+        "image": "userImgDefault.png",
+        "firstName": "JUAN jo",
+        "lastName": "GIMENEZ",
+        "email": "mdqgimenez@gmail.com",
+        "password": "12345"
+    },
+    {
+        "id": 6,
+        "image": "userImgDefault.png",
+        "firstName": "JUAN jo",
+        "lastName": "GIMENEZ",
+        "email": "mdqgimenez@gmail.com",
+        "password": ""
+    },
+    {
+        "id": 7,
+        "image": "userImgDefault.png",
+        "firstName": "JUAN jo",
+        "lastName": "GIMENEZ",
+        "email": "mdqgimenez@gmail.com",
+        "password": ""
+    },
+    {
+        "id": 8,
+        "image": "userImgDefault.png",
+        "firstName": "jjjjjjj",
+        "lastName": "sadasdasd",
+        "email": "asddsa@sadsad.com",
+        "password": "fffFF6676%"
+    },
+    {
+        "id": 9,
+        "image": "userImgDefault.png",
+        "firstName": "prueba pass encript",
+        "lastName": "perez",
+        "email": "perez@perez.com",
+        "password": "$2a$10$dayODYkpt0C7WOfITHOzLe2hSOyDD6Pwmwb8w.Wu7PjaiwBGhNPt2"
+    }
+]

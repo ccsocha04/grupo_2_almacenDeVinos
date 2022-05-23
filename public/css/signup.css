@@ -27,7 +27,7 @@ html {
 
 /* Add styles to the form container */
 .container {
-    
+
     position: relative;
     right: 0;
     margin: auto;
@@ -55,7 +55,7 @@ html {
     font-weight: bold;
     width: 50%;
     text-align: center;
-    
+
 }
 
 .registra a {
@@ -70,7 +70,8 @@ html {
 
 /* Full-width input fields */
 input[type=text],
-input[type=password], input[type=email] {
+input[type=password],
+input[type=email] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -96,6 +97,7 @@ input[type=email]:focus {
     color: red;
     text-decoration: none;
 }
+
 /* Set a style for the submit button */
 .boton {
     margin: auto;
@@ -116,4 +118,8 @@ input[type=email]:focus {
 
 .btn:hover {
     opacity: 1;
+}
+
+.form-error {
+    color: red;
 }
