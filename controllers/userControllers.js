@@ -53,9 +53,18 @@ let userControllers = {
             res.render("user/login");
 
         }
+    },
 
 
+    check: function (req, res){
+
+        if (req.session.usuarioLogueado == undefined){
+        res.send("no estás logueado")}
+        else {
+            res.send("el usuario logueado es" + req.session.usuarioLogueado.email)
+        }
     }
+    
 }
 
 module.exports = userControllers

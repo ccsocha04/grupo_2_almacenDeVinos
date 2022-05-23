@@ -34,6 +34,14 @@ router.get("/", userControllers.login);
 
 router.get("/signup", userControllers.signup);
 router.post("/signup", fileUpload.single("image"), validation ,userControllers.createUser);
+const guestMiddleware = require('../middleware/guestMiddleware.js')
+
+router.get("/", userControllers.login);
+
+router.get("/signup", guestMiddleware, userControllers.signup);
+
+router.get("/check-user", userControllers.check);
+
 
 
 module.exports = router;
