@@ -49,22 +49,23 @@ let userControllers = {
             usuarios.push(nuevoUsuario);
 
             fs.writeFileSync('./data/users.json', JSON.stringify(usuarios, null, 4));
-
-            res.render("user/login");
+            registroOk = true;
+            res.render( "user/login", { nuevoUsuario, registroOk } );
 
         }
     },
 
 
-    check: function (req, res){
+    check: function (req, res) {
 
-        if (req.session.usuarioLogueado == undefined){
-        res.send("no estás logueado")}
+        if (req.session.usuarioLogueado == undefined) {
+            res.send("no estás logueado")
+        }
         else {
             res.send("el usuario logueado es" + req.session.usuarioLogueado.email)
         }
     }
-    
+
 }
 
 module.exports = userControllers

@@ -73,5 +73,61 @@
         "lastName": "perez",
         "email": "perez@perez.com",
         "password": "$2a$10$dayODYkpt0C7WOfITHOzLe2hSOyDD6Pwmwb8w.Wu7PjaiwBGhNPt2"
+    },
+    {
+        "id": 10,
+        "image": "userImgDefault.png",
+        "firstName": "prueba2",
+        "lastName": "prueba2",
+        "email": "prueba@gmail.com",
+        "password": "$2a$10$lD3eeINUH6jHke3JaClpqeaEISlk6gfrK8Mi4qS5uWgIIWqKjEIuG"
+    },
+    {
+        "id": 11,
+        "image": "userImgDefault.png",
+        "firstName": "prueba2",
+        "lastName": "prueba2",
+        "email": "prueba@gmail.com",
+        "password": "$2a$10$pFi2h51SfZe8Rnyv0dIFiO1EP5OYbIe4Uvr/uDB3CIpdkX0ACIh8K"
+    },
+    {
+        "id": 12,
+        "image": "userImgDefault.png",
+        "firstName": "otra prueba",
+        "lastName": "otra prueba",
+        "email": "otraprueba@gmail.com",
+        "password": "$2a$10$d8iNlvBhmBtxhqi9jD9Ceu5hggsNnsutIZ0pehZuW5VRQWYnhwtQG"
+    },
+    {
+        "id": 13,
+        "image": "userImgDefault.png",
+        "firstName": "JUAN",
+        "lastName": "GIMENEZ",
+        "email": "mdqgimenez@gmail.com",
+        "password": "$2a$10$nELFAW.Ky4PlI5MGWR9fWOqYd/ruOaTPUA8k9Nf36W5go3ZnLaIdq"
+    },
+    {
+        "id": 14,
+        "image": "userImgDefault.png",
+        "firstName": "JUAN",
+        "lastName": "GIMENEZ",
+        "email": "mdqgimenez@gmail.com",
+        "password": "$2a$10$E178C4Us9jJCI2P/hwtSCuyp748N3desYZTIK.6B0b.AlyIjFW0jC"
+    },
+    {
+        "id": 15,
+        "image": "userImgDefault.png",
+        "firstName": "JUAN",
+        "lastName": "GIMENEZ",
+        "email": "mdqgimenez@gmail.com",
+        "password": "$2a$10$1k/Qi5fM58VMmlpakvMS.uC7jQaAdkHJzRI9sgZAeGYztYNmOVIoq"
+    },
+    {
+        "id": 16,
+        "image": "userImgDefault.png",
+        "firstName": "JUAN",
+        "lastName": "GIMENEZ",
+        "email": "mdqgimenez@gmail.com",
+        "password": "$2a$10$NZuFBz5v9esOeaxnGuMehOgrocE6jgf8Yu.VNxor7j526FfQzF8O2"
     }
 ]
