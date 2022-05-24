@@ -5,9 +5,10 @@ const session = require('express-session')
 // Crear servidor express
 const app = express();
 
-// Configuracuón de métodos de peticiones
-app.use (session({secret:"secret"}))
+// Configuración sesión
+app.use(session({secret:"secret"}))
 
+// Configuración de métodos de peticiones
 const methodOverride = require("method-override");
 app.use(methodOverride("_method"));
 

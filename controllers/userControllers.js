@@ -3,21 +3,43 @@ const path = require('path');
 const { validationResult } = require("express-validator");
 const bcrypt = require('bcryptjs');
 
+let usuariosFilePath = path.join(__dirname, '../data/users.json');
+let usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
 
 let userControllers = {
-
-    login: function (req, res) {
-        res.render("./user/login");
+    login: (req, res) => {
+        res.render("user/login");
     },
-
+    processLogin: (req, res) => {
+        let errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.render("user/login", {
+                errors: errors.array()
+            });
+        } else {
+            let email = req.body.email;
+            let password = req.body.password;
+            let user = usuarios.find(usuario => usuario.email === email);
+            res.send(user);
+            // if (!user) {
+            //     return res.render("user/login", {
+            //         errors: [{ msg: "El usuario no existe" }]
+            //     });
+            // }
+            // if (!bcrypt.compareSync(password, user.password)) {
+            //     return res.render("user/login", {
+            //         errors: [{ msg: "La contraseña no es correcta" }]
+            //     });
+            // }
+            // req.session.isLogged = true;
+            // req.session.user = user;
+            // res.redirect("/");
+        }
+    },
     signup: function (req, res) {
         res.render("./user/signup");
     },
-
     createUser: function (req, res) {
-
-        let usuariosJson = fs.readFileSync('./data/users.json', { encoding: 'utf-8' });
-        let usuarios = JSON.parse(usuariosJson);
 
         let idNuevoUsuario = usuarios[usuarios.length - 1].id + 1;
 

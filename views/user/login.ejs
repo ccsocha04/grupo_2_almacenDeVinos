@@ -5,37 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/login.css">
-
     <script src="https://kit.fontawesome.com/0a256d9d04.js" crossorigin="anonymous"></script>
-
     <title>Wine ONE LIFE - Login</title>
 </head>
 
 <body>
-   
-       
-    <div class="bg-img">    
-        <form action="/action_page.php" class="container">
+    <div class="bg-img">
+        <form action="/user/login" method="POST" class="container">
             <% if (locals.registroOk) { %>
-                <div>
-                   <p>El registro fue creado con exito!</p>
-                </div>
-           <% } %> <br>
-            <div class="login-sign"><div class="ingresa"><a href="/user">Ingresá</a></div> <div class="registra"> <a href="/user/signup"> Registrarse</a> </div> </div>
+            <div>
+                <p>El registro fue creado con exito!</p>
+            </div>
+            <% } %> 
             <br>
-
+            <div class="login-sign">
+                <div class="ingresa"><a href="/user">Ingresá</a></div>
+                <div class="registra"> <a href="/user/signup"> Registrarse</a> </div>
+            </div>
+            <br>
             <label for="email"><b>Email</b></label>
             <input type="email" placeholder="Tu Email" name="email" value="<%= locals.nuevoUsuario ? nuevoUsuario.email : null %>">
-
-            <label for="psw"><b>Contraseña</b></label>
-            <input type="password" placeholder="Contraseña" name="psw" required>
-
+            <label for="password"><b>Contraseña</b></label>
+            <input type="password" placeholder="Contraseña" name="password" required>
             <div class="boton">
-
-            <button type="submit" class="btn">Iniciar sesión</button></div>
+                <button type="submit" class="btn">Iniciar sesión</button>
+            </div>
         </form>
     </div>
 </body>

@@ -129,5 +129,13 @@
         "lastName": "GIMENEZ",
         "email": "mdqgimenez@gmail.com",
         "password": "$2a$10$NZuFBz5v9esOeaxnGuMehOgrocE6jgf8Yu.VNxor7j526FfQzF8O2"
+    },
+    {
+        "id": 17,
+        "image": "userImgDefault.png",
+        "firstName": "User",
+        "lastName": "Test",
+        "email": "user.test@gmail.com",
+        "password": "$2a$10$qk30S2AJdXHIze4G5ulFXOdbdDCGTsKIgDJ1eIQqVLsQeKk9YcYLC"
     }
 ]

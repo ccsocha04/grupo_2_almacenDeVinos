@@ -10,18 +10,13 @@ router.get("/", (req, res) => {
 });
 router.get("/home", mainControllers.home);
 
-router.get("/prueba-session", function(req, res){
-
-    if (req.session.contador == undefined){
-       req.session.contador = 0
-    }
-    req.session.contador++;
-   
-       res.send("es" +req.session.contador)
-   });
-   
-   
-   
+router.get("/prueba-session",(req, res) => {
+   if (req.session.contador == undefined) {
+      req.session.contador = 0
+   }
+   req.session.contador++;
+   res.send("es" + req.session.contador)
+});
 
 
 module.exports = router;
