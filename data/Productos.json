@@ -5,38 +5,34 @@
         "description": "desc p 1",
         "price": "11",
         "category": "vino",
-        "image": "producto11.png",
+        "image": "1651096548721.png",
         "recom": true
     },
     {
         "id": 2,
         "name": "producto 2",
         "description": "desc p 2",
-        "price": "50",
+        "price": "22",
         "category": "vino",
-        "image": "producto11.png",
-        "recom": false
+        "image": "1651096548721.png",
+        "recom": true
     },
     {
         "id": 3,
         "name": "producto 3",
-        "description": "descrip producto n 3 modif",
+        "description": "desc p 3",
         "price": "33",
         "category": "vino",
-        "image": "producto11.png",
-        "recom": false
+        "image": "1651096548721.png",
+        "recom": true
     },
     {
         "id": 4,
         "name": "producto 4",
         "description": "desc p 4",
-        "price": "100",
+        "price": "44",
         "category": "vino",
-        "image": "producto11.png",
-        "recom": false
-    },
-    {},
-    {},
-    {},
-    {}
+        "image": "1651096548721.png",
+        "recom": true
+    }
 ]

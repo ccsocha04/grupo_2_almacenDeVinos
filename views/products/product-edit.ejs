@@ -15,16 +15,9 @@
 <body>
     <main class="main-sections">
         <section class="section-article">
-            <div class="user"><i class="fas fa-user-circle"></i></div>
-            <h2>nombre usuario</h2><br>
-            <div class="create-search">
-                <div class="input-search">
-                    <form action="">
-                        <div><i class="fas fa-search"></i></div>
-                        <input type="text" placeholder="| Buscar producto" aria-label="search" />
-                        <button type="reset"><i class="fas fa-times"></i></button>
-                    </form>
-                </div>
+            <div>
+                <div class="user"><i class="fas fa-user-circle"></i></div>
+                <h2>nombre usuario</h2><br>
             </div>
             <div class="section-detail">
                 <article class="article-detail">
@@ -79,7 +72,8 @@
                         <br>
                         <div class="campo-form">
                             <label for="descripcion">Descripcion</label><br>
-                            <textarea id="descripcion" name="descripcion" rows="5" cols="50" placeholder="desc"><%=producto.description%></textarea>
+                            <textarea id="descripcion" name="descripcion" rows="5" cols="50"
+                                placeholder="desc"><%=producto.description%></textarea>
                         </div>
                         <br>
                         <div class="campo-form">

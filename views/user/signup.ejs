@@ -15,44 +15,54 @@
 </head>
 
 <body>
+
     
+
     <div class="bg-img">
-        <form action="/action_page.php" class="container">
-            <div class="login-sign"><div class="ingresa"><a href="/user">Ingresá</a></div> <div class="registra"> <a href="/user/signup"> Registrarse</a> </div> </div>
+        <form class="container" method="POST" action="/user/signup" enctype="multipart/form-data">
+
+            <div class="login-sign">
+                <div class="ingresa"><a href="/user">Ingresá</a></div>
+                <div class="registra"> <a href="/user/signup">Registrarse</a> </div>
+            </div><br>
+
+            <label for="image">Imagen de perfil:</label>
+            <input type="file" id="image" name="image" accept="image/*">
             <br>
+            <br>
+            <label for="firstName"><b>Nombre:</b></label>
+            <input type="text" name="firstName" id="firstName" value="<%= locals.oldData ? oldData.firstName : null %>" placeholder="Nombre" />
+            <% if (locals.errors && errors.firstName) { %>
+            <div class="form-error"><%= errors.firstName.msg %></div><br>
+            <% } %>
 
-            <label for="nombre"><b>Nombre:</b></label><br>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required
-                    minlength="2" maxlength="15" />
-
-            <label for="apellido"><b>Apellido:</b></label>
-            <input type="text" name="apellido" id="apellido"  placeholder="Apellido" required minlength="2" maxlength="15" />
+            <label for="lastName"><b>Apellido:</b></label>
+            <input type="text" name="lastName" id="lastName" value="<%= locals.oldData ? oldData.lastName : null %>" placeholder="Apellido" />
+            <% if (locals.errors && errors.lastName) { %>
+                <div class="form-error"><%= errors.lastName.msg %></div><br>
+                <% } %>
 
             <label for="email"><b>Correo Electrónico</b></label>
-            <input type="email" placeholder="Tu Email" name="email" required>
+            <input type="email" placeholder="Tu Email" name="email" id="lastName" value="<%= locals.oldData ? oldData.email : null %>">
+            <% if (locals.errors && errors.email) { %>
+                <div class="form-error"><%= errors.email.msg %></div><br>
+                <% } %>
 
-            <label for="psw"><b>Contraseña</b></label>
-            <input type="password" placeholder="Constraseña" name="psw" required>
+            <label for="password"><b>Contraseña</b></label>
+            <input type="password" placeholder="Constraseña" name="password" id="password" value="">
+            <% if (locals.errors && errors.password) { %>
+                <div class="form-error"><%= errors.password.msg %></div><br>
+                <% } %>
+
+
 
             <label for="check-password"><b>Confirmá tu contraseña:</b></label>
-            <input type="password" name="check-password" id="check-password"
-                 placeholder="Confirmar contraseña" required />
+            <input type="password" name="check-password" id="check-password" value="" placeholder="Confirmar contraseña" />
+ 
 
-
-            <div class="checkbox">
-            <input type="checkbox" name="condiciones" value="aceptarcondiciones" required>
-            <label for="condiciones" class="condiciones">Acepto los <a href="#">terminos y condiciones</a></label> 
-        </div>
-            
-            <div class="checkbox">
-            <input type="checkbox" name="info" value="info">
-            <label for="info" class="condiciones">Quiero recibir ofertas</label> </div>
-            
-               
             <div class="boton">
-            <button type="submit" class="btn">Crear usuario</button></div>
-
-        
+                <button type="submit" class="btn">Crear usuario</button>
+            </div>
 
         </form>
     </div>
