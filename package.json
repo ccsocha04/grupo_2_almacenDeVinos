@@ -4,7 +4,7 @@
   "description": "Proyecto Integrador Almacén de Vinos",
   "main": "app.js",
   "scripts": {
-    "test": "nodemond start"
+    "test": "nodemon start"
   },
   "repository": {
     "type": "git",
