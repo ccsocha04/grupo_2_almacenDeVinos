@@ -34,5 +34,14 @@
         "category": "vino",
         "image": "1651096548721.png",
         "recom": true
+    },
+    {
+        "id": 5,
+        "name": "sad",
+        "description": "sdsad",
+        "price": "44",
+        "category": "cervezas",
+        "recom": "true",
+        "image": "1653354332929.jpg"
     }
 ]

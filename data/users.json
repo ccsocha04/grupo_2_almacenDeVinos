@@ -129,5 +129,21 @@
         "lastName": "GIMENEZ",
         "email": "mdqgimenez@gmail.com",
         "password": "$2a$10$NZuFBz5v9esOeaxnGuMehOgrocE6jgf8Yu.VNxor7j526FfQzF8O2"
+    },
+    {
+        "id": 17,
+        "image": "userImgDefault.png",
+        "firstName": "hoy",
+        "lastName": "hoy",
+        "email": "mdqgimenez@gmail.com",
+        "password": "$2a$10$QHh/HI8L43V8NnNgvBT0yugyjP5pwshbeAc.J.kF1q5yXVK/KJIgK"
+    },
+    {
+        "id": 18,
+        "image": "userImgDefault.png",
+        "firstName": "JUAN",
+        "lastName": "GIMENEZ",
+        "email": "mdqgimenez@gmail.com",
+        "password": "$2a$10$lisMpos/FiksekxyfK.HguL8dzMPKlHSvrCrWRMrSNGur4nYeSctK"
     }
 ]
