@@ -24,7 +24,7 @@ const fileUpload = multer({ storage });
 
 const { body } = require("express-validator");
 
-const validation = [
+let validation = [
     body("firstName").notEmpty().withMessage("Tienes que escribir un nombre"),
     body("lastName").notEmpty().withMessage("Tienes que escribir un apellido"),
     body("email").notEmpty().withMessage("Tienes que escribir un email").bail()
@@ -32,11 +32,13 @@ const validation = [
     body("password").notEmpty().withMessage("Tienes que escribir una contraseña").bail().isStrongPassword().withMessage("La contraseña no es segura, debe tener minimo 8 caracteres, una letra mayuscula, una letra minuscula, un numero y un simbolo"),
 ];
 
+let loginValidation = [
+    body("email").isEmail().withMessage("Debes escribir un formato de email valido"),
+    body('password').isLength({ min: 8 }).withMessage("La contraseña no tiene la estructura, debe tener minimo 8 caracteres, una letra mayuscula, una letra minuscula, un numero y un simbolo")
+];
+
 router.get("/login", userControllers.login);
-router.post("/login", [
-    body('email').isEmail().withMessage("Debes escribir un formato de email valido"),
-    body('password').isLength({ min: 8 }).withMessage("La contraseña no es segura, debe tener minimo 8 caracteres, una letra mayuscula, una letra minuscula, un numero y un simbolo")
-], userControllers.processLogin);
+router.post("/login", loginValidation, userControllers.processLogin);
 router.get("/signup", guestMiddleware, userControllers.signup);
 router.post("/signup", fileUpload.single("image"), validation, userControllers.createUser);
 router.get("/check-user", userControllers.check);

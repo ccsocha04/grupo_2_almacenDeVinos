@@ -135,7 +135,23 @@
         "image": "userImgDefault.png",
         "firstName": "User",
         "lastName": "Test",
-        "email": "user.test@gmail.com",
+        "email": "ccsocha04@gmail.com",
         "password": "$2a$10$qk30S2AJdXHIze4G5ulFXOdbdDCGTsKIgDJ1eIQqVLsQeKk9YcYLC"
+    },
+    {
+        "id": 18,
+        "image": "userImgDefault.png",
+        "firstName": "Angela",
+        "lastName": "Quimbayo Beltrán",
+        "email": "an.qube12@gmail.com",
+        "password": "$2a$10$OFGO/eXCY53QQU7Otuv82O/dqE1.t2ZO.g9jkOJM6bocUvvZYAvji"
+    },
+    {
+        "id": 19,
+        "image": "1653530899868.png",
+        "firstName": "Cristian",
+        "lastName": "Socha",
+        "email": "ccsocha041@gmail.com",
+        "password": "$2a$10$xYJQCtQAXp9x9Vhd1o4lHuxnN6inWJ41pUP4YWrvz/U1Ik8eQbCvW"
     }
 ]

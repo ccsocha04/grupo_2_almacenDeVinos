@@ -4,7 +4,7 @@
   "description": "Proyecto Integrador Almacén de Vinos",
   "main": "app.js",
   "scripts": {
-    "test": "nodemond start"
+    "test": "nodemon start"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ccsocha04/grupo_2_almacenDeVinos#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "express-session": "^1.17.3",

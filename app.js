@@ -1,12 +1,16 @@
 const express = require('express');
 const path = require('path');
-const session = require('express-session')
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const cookieAuthMiddleware = require('./middleware/cookieAuthMiddleware');
 
 // Crear servidor express
 const app = express();
 
 // Configuración sesión
 app.use(session({secret:"secret"}))
+app.use(cookieParser());
+app.use(cookieAuthMiddleware);
 
 // Configuración de métodos de peticiones
 const methodOverride = require("method-override");
