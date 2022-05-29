@@ -5,6 +5,7 @@ const path = require ("path")
 const productsControllers = require("../controllers/productsControllers.js");
 const guestMiddleware = require('../middleware/guestMiddleware.js')
 const authMiddleware = require('../middleware/authMiddleware.js')
+const adminMiddleware = require('../middleware/adminMiddleware.js')
 
 
 
@@ -35,13 +36,13 @@ router.get("/product-detail", productsControllers.detalleProducto);
 
 router.get("/cart", productsControllers.cart);
 
-router.get("/create", productsControllers.create);
+router.get("/create", adminMiddleware, productsControllers.create);
 
 router.post("/create",fileUpload.single("image"), checkError, productsControllers.createpost);
 
 
 /*** EDIT ONE PRODUCT ***/ 
-router.get("/edit/:id", productsControllers.edit);
+router.get("/edit/:id", adminMiddleware, productsControllers.edit);
 router.patch("/edit/:id", fileUpload.single("image"), productsControllers.update);
 
 
