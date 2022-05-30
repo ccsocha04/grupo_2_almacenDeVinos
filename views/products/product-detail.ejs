@@ -23,7 +23,7 @@
         <section class="detalle">
             <article class="imagen">
 
-                <img class="botella-vino" src="/img/producto.jpg">
+                <img class="botella-vino" src="/img/<%=producto.image %>">
                 
 
             </article>
@@ -33,15 +33,15 @@
                 
 
                 <div class="nombre-producto">
-                    NOMBRE DEL PRODUCTO
+                    <%=producto.name%>
                 </div>
 
                 <div class="descripcion-producto">
-                    Breve descripción del articulo
+                    <%=producto.description%>
                 </div>
 
                 <div class="precio-producto">
-                    precio $$$
+                    $<%=producto.price%>
                 </div>
 
                 <div class="cantidad-producto">
