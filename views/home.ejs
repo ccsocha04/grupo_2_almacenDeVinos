@@ -47,7 +47,7 @@
                 <% recomendados.forEach((producto, i, recomendados) => {%> 
                 <section id="productos" class="productos">
                     <article class="articulos">
-                        <div><img class="img-producto" src="/img/<%= recomendados[i].image %>"></a></div>
+                        <div><a href="/products/product-detail/<%=recomendados[i].id%>"><img class="img-producto" src="/img/<%= recomendados[i].image %>" ></a></div>
                         <div>
                             <p class=""><%=recomendados[i].name%></p>
                         </div>
