@@ -133,10 +133,11 @@
     {
         "id": 17,
         "image": "userImgDefault.png",
-        "firstName": "hoy",
-        "lastName": "hoy",
         "email": "mdqgimenez@gmail.com",
-        "password": "$2a$10$QHh/HI8L43V8NnNgvBT0yugyjP5pwshbeAc.J.kF1q5yXVK/KJIgK"
+        "password": "$2a$10$QHh/HI8L43V8NnNgvBT0yugyjP5pwshbeAc.J.kF1q5yXVK/KJIgK",
+        "firstName": "User",
+        "lastName": "Test"
+
     },
     {
         "id": 18,
@@ -145,5 +146,13 @@
         "lastName": "GIMENEZ",
         "email": "mdqgimenez@gmail.com",
         "password": "$2a$10$lisMpos/FiksekxyfK.HguL8dzMPKlHSvrCrWRMrSNGur4nYeSctK"
+    },
+    {
+        "id": 19,
+        "image": "1653530899868.png",
+        "firstName": "Cristian",
+        "lastName": "Socha",
+        "email": "ccsocha041@gmail.com",
+        "password": "$2a$10$xYJQCtQAXp9x9Vhd1o4lHuxnN6inWJ41pUP4YWrvz/U1Ik8eQbCvW"
     }
 ]

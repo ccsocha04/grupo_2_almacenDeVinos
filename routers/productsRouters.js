@@ -3,6 +3,8 @@ const router = express.Router();
 const multer = require ("multer")
 const path = require ("path")
 const productsControllers = require("../controllers/productsControllers.js");
+const guestMiddleware = require('../middleware/guestMiddleware.js')
+const authMiddleware = require('../middleware/authMiddleware.js')
 
 
 

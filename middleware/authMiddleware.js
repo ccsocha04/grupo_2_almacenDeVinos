@@ -1,11 +1,9 @@
-function authMiddleware (req, res, next) {
-
-    if (req.session.usuarioLogueado != undefined){
-        next()}
-        else {
-            res.send("Lo siento, está página es de usuarios")
-        }
-
+function authMiddleware(req, res, next) {
+    if (req.session.user != undefined) {
+        next()
+    } else {
+        res.send("Lo siento, está página no es para invitados")
+    }
 }
 
-module.export = authMiddleware
+module.exports = authMiddleware;
