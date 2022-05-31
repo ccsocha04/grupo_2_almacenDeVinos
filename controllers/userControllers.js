@@ -55,7 +55,8 @@ let userControllers = {
             firstName: req.body.firstName,
             lastName: req.body.lastName,
             email: req.body.email,
-            password: bcrypt.hashSync(req.body.password, 10)
+            password: bcrypt.hashSync(req.body.password, 10),
+            admin: false
         }
 
         if (req.file) {
@@ -75,15 +76,8 @@ let userControllers = {
             registroOk = true;
             res.render( "user/login", { nuevoUsuario, registroOk } );
         }
-    },
-    check: function (req, res) {
-        if (req.session.isLogged) {
-            res.send("no estás logueado")
-        }
-        else {
-            res.send(req.session.user)
-        }
     }
+    
 
 }
 

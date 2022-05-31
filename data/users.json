@@ -154,5 +154,14 @@
         "lastName": "Socha",
         "email": "ccsocha041@gmail.com",
         "password": "$2a$10$xYJQCtQAXp9x9Vhd1o4lHuxnN6inWJ41pUP4YWrvz/U1Ik8eQbCvW"
+    },
+    {
+        "id": 20,
+        "image": "userImgDefault.png",
+        "firstName": "sasas",
+        "lastName": "asasas",
+        "email": "prueba123!@hotmail.com",
+        "password": "$2a$10$M386OnGnUfL2P927JikCmOPBuUBGjFejyUcd9MLbVteQRubbuBFES",
+        "admin": true
     }
 ]
