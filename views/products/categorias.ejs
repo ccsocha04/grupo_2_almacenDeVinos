@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/logottt.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/0a256d9d04.js" crossorigin="anonymous"></script>
+    <title>Wine ONE LIFE - Inicio</title>
+</head>
+
+<body>
+    <%- include("../partials/header.ejs") %> 
+
+        <main class="main-sections">
+            <h2>Categoria <%=categorias[0].category%></h2>
+            <% categorias.forEach((producto, i, categorias)=> {%>
+                <section id="productos" class="productos">
+                    <article class="articulos">
+                        <div><a href="/products/product-detail/<%=categorias[i].id%>"><img class="img-producto"
+                                    src="/img/<%= categorias[i].image %>"></a></div>
+                        <div>
+                            <p class="">
+                                <%=categorias[i].name%>
+                            </p>
+                        </div>
+                        <div class="">
+                            <%=categorias[i].description%>
+                        </div>
+                        <div class="">
+                            <%=categorias[i].price%>
+                        </div>
+                        <div> <i class="fas fa-cart-arrow-down"></i></div>
+                    </article>
+                </section>
+                <%})%>
+        </main>
+
+        <%- include("../partials/footer.ejs") %>
+
+</body>

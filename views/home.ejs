@@ -15,48 +15,64 @@
 <body>
     <%- include("partials/header.ejs") %>
         <main>
-            <div class="container">
-                <div class="first">
-                    <img src="/img/wine6.jpg" alt="" class="img-vino">
-                    <div class="wine">
-                        <p class="texto">VINOS</p>
+                <div class="container">
+                    <div class="first">
+                        <img src="/img/wine6.jpg" alt="" class="img-vino">
+                        <div class="wine">
+                            <form class="bot-cat" method="POST" action="/products/categoria">
+                            <button type="submit" name="category" value="vinos" class="texto">VINOS</button>
+                        </form>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <img src="/img/beer3.jpg" alt="" class="">
+                        <div class="beer">
+                            <form class="" method="POST" action="/products/categoria">
+                            <button type="submit" name="category" value="cervezas" class="texto">CERVEZAS</button>
+                        </form>
+                        </div>
+                    </div>
+                    <div class="tercero">
+                        <img src="/img/wiskey2.jpg" alt="" class="">
+                        <div class="wiskey">
+                            <form class="" method="POST" action="/products/categoria">
+                            <button type="submit" name="category" value="whisky" class="texto">WHISKY</button>
+                        </form>
+                        </div>
+                    </div>
+                    <div class="cuatro">
+                        <img src="/img/champ1.jpg" alt="" class="">
+                        <div class="champain">
+                            <form class="" method="POST" action="/products/categoria">
+                                <button type="submit" name="category" value="espumantes" class="texto">ESPUMANTES</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div class="second">
-                    <img src="/img/beer3.jpg" alt="" class="">
-                    <div class="beer">
-                        <p class="texto">CERVEZAS</p>
-                    </div>
-                </div>
-                <div class="tercero">
-                    <img src="/img/wiskey2.jpg" alt="" class="">
-                    <div class="wiskey">
-                        <p class="texto">WHISKY</p>
-                    </div>
-                </div>
-                <div class="cuatro">
-                    <img src="/img/champ1.jpg" alt="" class="">
-                    <div class="champain">
-                        <p class="texto">ESPUMANTES</p>
-                    </div>
-                </div>
-            </div>
+        
             <br>
             <main class="main-sections">
                 <h2>Nuestras recomendaciones</h2>
-                <% recomendados.forEach((producto, i, recomendados) => {%> 
-                <section id="productos" class="productos">
-                    <article class="articulos">
-                        <div><a href="/products/product-detail/<%=recomendados[i].id%>"><img class="img-producto" src="/img/<%= recomendados[i].image %>" ></a></div>
-                        <div>
-                            <p class=""><%=recomendados[i].name%></p>
-                        </div>
-                        <div class=""><%=recomendados[i].description%></div>
-                        <div class=""><%=recomendados[i].price%></div>
-                        <div> <i class="fas fa-cart-arrow-down"></i></div>
-                    </article>
-                </section>
-                <%})%>
+                <% recomendados.forEach((producto, i, recomendados)=> {%>
+                    <section id="productos" class="productos">
+                        <article class="articulos">
+                            <div><a href="/products/product-detail/<%=recomendados[i].id%>"><img class="img-producto"
+                                        src="/img/<%= recomendados[i].image %>"></a></div>
+                            <div>
+                                <p class="">
+                                    <%=recomendados[i].name%>
+                                </p>
+                            </div>
+                            <div class="">
+                                <%=recomendados[i].description%>
+                            </div>
+                            <div class="">
+                                <%=recomendados[i].price%>
+                            </div>
+                            <div> <i class="fas fa-cart-arrow-down"></i></div>
+                        </article>
+                    </section>
+                    <%})%>
             </main>
             <%- include("partials/footer.ejs") %>
 </body>

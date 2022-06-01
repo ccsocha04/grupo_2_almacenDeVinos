@@ -1,47 +1,110 @@
 [
     {
         "id": 1,
-        "name": "producto 1",
-        "description": "desc p 1",
-        "price": "11",
-        "category": "vino",
-        "image": "1651096548721.png",
+        "name": "Rutini Cabernet Malbec",
+        "description": "Rojo rubí profundo. El dúo de cepas de origen francés da como resultado un tinto armonioso y equilibrado.",
+        "price": "2.300",
+        "category": "vinos",
+        "image": "rutini.png",
         "recom": true
     },
     {
         "id": 2,
-        "name": "producto 2",
-        "description": "desc p 2",
-        "price": "22",
-        "category": "vino",
-        "image": "1651096548721.png",
-        "recom": true
+        "name": "Rioja Crianza 2010",
+        "description": "Elaborado con una selección de uvas Tempranillo, Mazuelo, Graciano y Garnacha cuatro uvas autóctonas de la Rioja.",
+        "price": "820",
+        "category": "vinos",
+        "image": "producto4.png",
+        "recom": false
     },
     {
         "id": 3,
-        "name": "producto 3",
-        "description": "desc p 3",
-        "price": "33",
-        "category": "vino",
-        "image": "1651096548721.png",
-        "recom": true
+        "name": "Domaine Bousquet",
+        "description": "100% robre francés y americano durante 6 meses y al menos 4 meses de envejecimiento en botella.",
+        "price": "850",
+        "category": "vinos",
+        "image": "bousquet.png",
+        "recom": false
     },
     {
         "id": 4,
-        "name": "producto 4",
-        "description": "desc p 4",
-        "price": "44",
-        "category": "vino",
-        "image": "1651096548721.png",
-        "recom": true
+        "name": "Heineken Rubia",
+        "description": "Elaborada a partir de un mosto cuyo extracto primitivo proviene exclusivamente de cebada malteada.",
+        "price": "170",
+        "category": "cervezas",
+        "image": "heineken.png",
+        "recom": false
     },
     {
         "id": 5,
-        "name": "sad",
-        "description": "sdsad",
-        "price": "44",
+        "name": "Duff",
+        "description": "La favorita de Homero Simpson. Una cerveza lager premium de color dorado, un toque de fruta y cierto aroma a caramelo.",
+        "price": "150",
         "category": "cervezas",
-        "recom": "true",
-        "image": "1653354332929.jpg"
+        "recom": true,
+        "image": "duff.png"
+    },
+    {
+        "id": 6,
+        "name": "Budweiser",
+        "description": "Conocida como La Lager Preferida del Mundo por ser elegida en más de 85 países, Budweiser sigue cumpliendo los mismo estándares y procesos desde 1876.",
+        "price": "152",
+        "category": "cervezas",
+        "image": "budweiser.png",
+        "recom": false
+    },
+    {
+        "id": 7,
+        "name": "Jack Daniel's",
+        "description": "Jack Daniel's es una destilería y marca de whiskey estadounidense de Tennessee. El método de destilación principal es el Whiskey.",
+        "price": "5.850",
+        "category": "whisky",
+        "recom": true,
+        "image": "jackdaniels.png"
+    },
+    {
+        "id": 8,
+        "name": "Johnnie Walker Red Label",
+        "description": "Versátil y con un atractivo universal, tiene un sabor acentuado y lleno de carácter que se mantiene incluso al ser mezclado.",
+        "price": "3.450",
+        "category": "whisky",
+        "image": "redlabel.png",
+        "recom": false
+    },
+    {
+        "id": 9,
+        "name": "Chivas 18",
+        "description": "Contiene nada más y nada menos que 85 notas únicas de sabor en cada gota. Este whisky escocés de mezcla de 18 años, intenso y complejo.",
+        "price": "13.000",
+        "category": "whisky",
+        "recom": false,
+        "image": "chivas.png"
+    },
+    {
+        "id": 10,
+        "name": "Moet Brut Imperial",
+        "description": "Aromas de fruta madura con toques vinosos, con un toque de tilo y de flor de vid. Suave y equilibrado, con gran amplitud en boca y final amable e intenso.",
+        "price": "17.990",
+        "category": "espumantes",
+        "image": "chandon.png",
+        "recom": true
+    },
+    {
+        "id": 11,
+        "name": "Chandon Rose",
+        "description": "Elegante color rosado brillante aportado por el Malbec. Expresa sensualidad y vivacidad.",
+        "price": "980",
+        "category": "espumantes",
+        "recom": false,
+        "image": "chandonrose.png"
+    },
+    {
+        "id": 12,
+        "name": "Dom Pérignon",
+        "description": "En nariz, el bouquet evoluciona en espiral. Primero, la suavidad floral y luego la mineralidad tan típica de Dom Pérignon, el carácter afrutado confitado, la nota vegetal y fresca para sumergirse por fin en la oscuridad, las especias, el regaliz.",
+        "price": "89.000",
+        "category": "espumantes",
+        "recom": false,
+        "image": "domperignon.png"
     }
 ]

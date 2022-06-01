@@ -13,6 +13,13 @@ let productsControllers = {
           res.send("listado de productos");
      },
 
+     categorias: function (req, res) {
+          categoria = req.body.category;
+          let categorias = products.filter(productos => productos.category == categoria);
+          res.render("./products/categorias", { categorias });
+          // let recomendados = products.filter(productos => productos.category == req.body.categoria);
+     },
+
      detalleProducto: function (req, res) {
           let { id } = req.params;
           let editarProducto = products.find(product => product.id == id);

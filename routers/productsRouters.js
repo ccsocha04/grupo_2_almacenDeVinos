@@ -32,6 +32,9 @@ const checkError = [body("name").notEmpty().withMessage("el nombre, genio")]
 
 router.get("/", productsControllers.home);
 
+router.get("/categoria", productsControllers.categorias);
+router.post("/categoria", productsControllers.categorias);
+
 router.get("/product-detail/:id", productsControllers.detalleProducto);
 
 router.get("/cart", productsControllers.cart);

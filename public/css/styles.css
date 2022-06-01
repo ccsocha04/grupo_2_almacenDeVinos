@@ -198,14 +198,13 @@ input {
   outline: none;
 }
 
-button {
+/* button {
   border: none;
   background-color: #f6f6f6;
-}
+} */
 
 form {
   display: flex;
-  width: 100%;
 }
 
 .nav-bar {
@@ -404,6 +403,9 @@ box-shadow:  20px 20px 60px #bebebe,
     word-break: break-word;
     text-align: center;
     letter-spacing: 2px;
+    background-color: transparent;
+    color: whitesmoke;
+    border: none;
 }
 
 .tercero {
@@ -438,7 +440,7 @@ display: flex;
 .beer {
   position: absolute;
   display: flex;
-  width: 75%;
+
   justify-content: center;
   align-items: center;
   color: aliceblue;
