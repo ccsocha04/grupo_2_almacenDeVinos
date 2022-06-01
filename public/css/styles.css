@@ -37,7 +37,7 @@ main {
 .main-header-logo {
     width: 100%;
     text-align: center;
-}	
+}
 
 .logo {
     width: 240px;
@@ -152,50 +152,51 @@ main {
 
 
 .burguer-menu {
-  color: #f6f6f6;
-  text-align: center;
+    color: #f6f6f6;
+    text-align: center;
 }
 
 .fa-user {
-  color: #f6f6f6;
+    color: #f6f6f6;
 }
 
 .texto-header {
-  color: #f6f6f6;
-  font-size: calc(0.6em + 0.5vw);
-  text-align: center;
+    color: #f6f6f6;
+    font-size: calc(0.6em + 0.5vw);
+    text-align: center;
 }
 
 .carrito {
-  color: #f6f6f6;
-  text-align: center;
+    color: #f6f6f6;
+    text-align: center;
 }
 
 .fa-shopping-cart {
-  color: #f6f6f6;
+    color: #f6f6f6;
 }
 
 .barra-busqueda {
-  display: flex;
-  align-items: center;
-  border-radius: 2px;
-  background-color: #f6f6f6;
-  padding: 5px;
-  max-height: 25px;
-  max-width: 40%;
-  text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    background-color: #f6f6f6;
+    padding: 5px;
+    max-height: 25px;
+    max-width: 40%;
+    text-align: center;
 }
 
-.fa-search, .fa-times {
-  color: #111111;
-  background-color: #f6f6f6;
+.fa-search,
+.fa-times {
+    color: #111111;
+    background-color: #f6f6f6;
 }
 
 input {
-  margin: 0 5px 0 5px;
-  width: 100%;
-  border: none;
-  outline: none;
+    margin: 0 5px 0 5px;
+    width: 100%;
+    border: none;
+    outline: none;
 }
 
 /* button {
@@ -204,32 +205,33 @@ input {
 } */
 
 form {
-  display: flex;
+    display: flex;
 }
 
 .nav-bar {
-  display: none;
-  margin-top: 10px;
+    display: none;
+    margin-top: 10px;
 }
 
 .nav-bar a {
-  padding: 5px;
+    padding: 5px;
 }
 
-li, a {
-  list-style: none;
-  text-decoration: none;
-  color: #f6f6f6;
-  display: inline-block;
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #f6f6f6;
+    display: inline-block;
 }
 
 .ing-reg {
-  width: 100%;
-  color: #f6f6f6;
-  text-align: center;
-  font-size: 12px;
-  /* background-color: #4d2121; */
-  background-color: #111111;
+    width: 100%;
+    color: #f6f6f6;
+    text-align: center;
+    font-size: 12px;
+    /* background-color: #4d2121; */
+    background-color: #111111;
 }
 
 .banner-text button {
@@ -261,7 +263,7 @@ li, a {
 }
 
 .categorias {
-  display: flex;
+    display: flex;
 }
 
 
@@ -282,10 +284,9 @@ h2 {
 
 .articulos {
     border-radius: 10px;
-background: #e0e0e0;
-box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
-             padding: 10px;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    padding: 10px;
 }
 
 
@@ -374,29 +375,29 @@ box-shadow:  20px 20px 60px #bebebe,
 }
 
 .container {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1.5fr;
-  grid-template-rows: 0fr 1fr 0fr;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 0fr 1fr 0fr;
 }
 
 .container img {
-  width: 100%;
+    width: 100%;
 }
 
 .first {
-  grid-row: 1/span 2;
-  grid-column: 1/span 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
+    grid-row: 1/span 2;
+    grid-column: 1/span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
 }
 
 .second {
     display: flex;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
 }
 
 .texto {
@@ -411,84 +412,84 @@ box-shadow:  20px 20px 60px #bebebe,
 .tercero {
     display: flex;
     align-items: center;
-  justify-content: center;
-  background-color: #000000;
+    justify-content: center;
+    background-color: #000000;
 }
 
 .cuatro {
-display: flex;
-  grid-row: 7;
-  grid-column: 1 /span 3;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    grid-row: 7;
+    grid-column: 1 /span 3;
+    justify-content: center;
+    align-items: center;
 }
 
 .wine {
-  position: absolute;
-  display: flex;
-  width: 40%;
-  justify-content: center;
-  align-items: center;
-  color: aliceblue;
-  padding: 10px;
-  background-color: rgba(30, 30,30, 0.6);
-  border-radius: 0x;
-  backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 0.6);
+    border-radius: 0x;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .beer {
-  position: absolute;
-  display: flex;
+    position: absolute;
+    display: flex;
 
-  justify-content: center;
-  align-items: center;
-  color: aliceblue;
-  grid-row: 1;
-  grid-column: 3;
-  padding: 10px;
-  background-color: rgba(30, 30,30, 0.6);
-  border-radius: 0px;
-  backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    grid-row: 1;
+    grid-column: 3;
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 0.6);
+    border-radius: 0px;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: content-box;
 }
 
 .wiskey {
-  position: absolute;
-  display: flex;
-  width: 60%;
-  justify-content: center;
-  align-items: center;
-  color: aliceblue;
-  grid-row: 2;
-  grid-column: 3;
-  padding: 10px;
-  background-color: rgba(30, 30,30, 0.6);
-  border-radius: 0px;
-  backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-sizing: content-box;
+    position: absolute;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    grid-row: 2;
+    grid-column: 3;
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 0.6);
+    border-radius: 0px;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: content-box;
 }
 
 .champain {
-  position: absolute;
-  display: flex;
-  width: 55%;
-  justify-content: center;
-  align-items: center;
-  color: aliceblue;
-  grid-row: 3;
-  grid-column: 2;
-  padding: 10px;
-  background-color: rgba(30, 30,30, 0.6);
-  border-radius: 0px;
-  backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-sizing: content-box;
+    position: absolute;
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    grid-row: 3;
+    grid-column: 2;
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 0.6);
+    border-radius: 0px;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: content-box;
 }
 
-.banner-foot{
+.banner-foot {
     text-align: center;
     background-color: white;
 }
@@ -512,45 +513,40 @@ display: flex;
     padding: 5px;
     box-shadow: -3px -3px 6px gray;
     width: 45%;
-  }
+}
 
-  .create-search{
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-  }
+.create-search {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
 
-  .create{
+.create {
     box-shadow: -3px -3px 6px grey;
     background-color: white;
     display: flex;
     align-items: center;
     padding: 5px;
     box-shadow: -3px -3px 6px gray;
-  }
+}
 
-  .user {
-      text-align: center;
-      font-size: 50px;
-  }
+.user {
+    text-align: center;
+    font-size: 50px;
+}
 
- 
-  .formulario {
+
+.formulario {
     display: flex;
     justify-content: center;
-  }
+}
 
-  .botones-form{
+.botones-form {
     display: flex;
     justify-content: space-evenly;
-  }
+}
 
-  .boton-delete {
-
-  }
-
-
-  fieldset{
+fieldset {
 
 
     padding: 15px;
@@ -562,16 +558,16 @@ display: flex;
 
     border-radius: 10px;
     background: #e0e0e0;
-  }
+}
 
-  legend {
+legend {
     background: lightgray;
     font-weight: bold;
-  }
+}
 
-  .imagen-editar {
-      width: 20% !important;
-  }
+.imagen-editar {
+    width: 20% !important;
+}
 
 @media (min-width: 479) {
     /* .banner-image {
@@ -580,7 +576,8 @@ display: flex;
 
 }
 
-@media (min-width: 768px) { /* vista tablet
+@media (min-width: 768px) {
+    /* vista tablet
     /* .banner-image {
         background-size: cover;
     } */
@@ -598,7 +595,7 @@ display: flex;
 
     .imagen {
         width: 14%;
-   
+
     }
 
     .content-footer {
@@ -607,7 +604,7 @@ display: flex;
 }
 
 @media screen and (max-width: 600px) {
-    
+
     .topnav a {
         display: none;
     }
@@ -642,11 +639,11 @@ display: flex;
     .main-header-logo {
         width: 20%;
     }
-    
+
     .topnav {
         width: 30%;
     }
-    
+
     .topnav-right {
         width: 20%;
     }
@@ -671,5 +668,5 @@ display: flex;
     .imagen {
         width: 10%;
     }
-  
-  }
+
+}
