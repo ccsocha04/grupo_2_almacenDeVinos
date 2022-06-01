@@ -13,10 +13,11 @@
 </head>
 
 <body>
-    <%- include("../partials/header.ejs") %> 
+    <%- include("../partials/header.ejs") %>
 
         <main class="main-sections">
-            <h2>Categoria <%=categorias[0].category%></h2>
+            <h2>Categoria <%=categorias[0].category%>
+            </h2>
             <% categorias.forEach((producto, i, categorias)=> {%>
                 <section id="productos" class="productos">
                     <article class="articulos">
@@ -27,9 +28,9 @@
                                 <%=categorias[i].name%>
                             </p>
                         </div>
-                        <div class="">
+                        <!--  <div class="">
                             <%=categorias[i].description%>
-                        </div>
+                        </div> -->
                         <div class="">
                             <%=categorias[i].price%>
                         </div>

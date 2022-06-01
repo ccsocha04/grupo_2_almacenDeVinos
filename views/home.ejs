@@ -17,7 +17,7 @@
         <main>
                 <div class="container">
                     <div class="first">
-                        <img src="/img/wine6.jpg" alt="" class="img-vino">
+                        <img src="/img/wine7.jpg" alt="" class="img-vino">
                         <div class="wine">
                             <form class="bot-cat" method="POST" action="/products/categoria">
                             <button type="submit" name="category" value="vinos" class="texto">VINOS</button>
@@ -56,6 +56,9 @@
                 <% recomendados.forEach((producto, i, recomendados)=> {%>
                     <section id="productos" class="productos">
                         <article class="articulos">
+                            <div>
+                                <p>Categoria - <%=recomendados[i].category%> </p>
+                            </div>
                             <div><a href="/products/product-detail/<%=recomendados[i].id%>"><img class="img-producto"
                                         src="/img/<%= recomendados[i].image %>"></a></div>
                             <div>
@@ -63,9 +66,9 @@
                                     <%=recomendados[i].name%>
                                 </p>
                             </div>
-                            <div class="">
+                            <!-- <div class="">
                                 <%=recomendados[i].description%>
-                            </div>
+                            </div> -->
                             <div class="">
                                 <%=recomendados[i].price%>
                             </div>

@@ -33,7 +33,7 @@ html {
     margin: auto;
     max-width: 300px;
     padding: 16px;
-    background-color: #2f2f2f;
+    backdrop-filter: blur(10px);
     border-radius: 15px;
     color: #f6f6f6;
 }
