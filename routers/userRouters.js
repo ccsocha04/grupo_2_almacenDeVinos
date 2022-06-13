@@ -41,6 +41,7 @@ router.get("/login", userControllers.login);
 router.post("/login", loginValidation, userControllers.processLogin);
 router.get("/signup", guestMiddleware, userControllers.signup);
 router.post("/signup", fileUpload.single("image"), validation, userControllers.createUser);
+router.get("/detail/:id", userControllers.userDetail);
 
 
 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/fav-logo.png"> <!-- Coloco imagen en pestaña del navegador -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/product-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/e638c2695f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+    <title>Wine ONE LIFE - Usuario</title>
+</head>
+
+<body>
+    <%- include("../partials/header.ejs") %> 
+    <main>
+        <section class="detalle">
+            <article class="imagen">
+
+                <img class="botella-vino" src="/img/<%=producto.image %>">
+                
+
+            </article>
+
+            <article class="descripcion">
+
+                
+
+                <div class="nombre-producto">
+                    <p>Nombre:</p>
+                    <%=producto.firstName%>
+                </div>
+
+                <div class="nombre-producto">
+                    <p>Apellido:</p>
+                    <%=producto.lastName%>
+                </div>
+
+                <div class="nombre-producto">
+                    <p>Email:</p>
+                    $<%=producto.email%>
+                </div>
+
+                
+
+            </article>
+        </section>
+        <br>
+        <br>
+
+        <hr>
+        <div class="puede-interesar">
+            <h2>También puede interesarte</h2>
+        </div>
+        <br>
+
+
+        <section id="productos" class="productos">
+            <article class="articulos">
+                <div><a href="/products/product-detail"><img class="img-producto" src="/img/producto11.png"></a></div>
+                <div>
+                    <p class="">Nombre del producto</p>
+                </div>
+                <div class="">Descripcion</div>
+                <div class="">Precio</div>
+                <div> <i class="fas fa-cart-arrow-down"></i></div>
+            </article>
+            <article class="articulos">
+                <a href="/products/product-detail"><img class="img-producto" src="/img/producto2.png"></a>
+                <p class="">Nombre del producto</p>
+                <div class="">Descripcion</div>
+                <div class="">Precio</div>
+                <i class="fas fa-cart-arrow-down"></i>
+            </article>
+            <article class="articulos art-oculto">
+                <a href="/products/product-detail"> <img class="img-producto" src="/img/producto5.png"></a>
+                <p class="">Nombre del producto</p>
+                <div class="">Descripcion</div>
+                <div class="">Precio</div>
+                <i class="fas fa-cart-arrow-down"></i>
+            </article>
+        </section>
+
+        <br>
+
+            <hr>
+
+    </main>
+    
+        <%- include("../partials/footer.ejs") %>
+    
+</body>
+
+</html>

@@ -22,7 +22,7 @@
         "firstName": "Juanita",
         "lastName": "Loudian",
         "email": "jloudian2@mediafire.com",
-        "password": "kesmI2",
+        "password": "kesmI25555!",
         "category": "Rebar & Wire Mesh Install",
         "image": "Drywall & Acoustical (FED)"
     },
@@ -137,7 +137,6 @@
         "password": "$2a$10$QHh/HI8L43V8NnNgvBT0yugyjP5pwshbeAc.J.kF1q5yXVK/KJIgK",
         "firstName": "User",
         "lastName": "Test"
-
     },
     {
         "id": 18,
@@ -163,5 +162,14 @@
         "email": "prueba123!@hotmail.com",
         "password": "$2a$10$M386OnGnUfL2P927JikCmOPBuUBGjFejyUcd9MLbVteQRubbuBFES",
         "admin": true
+    },
+    {
+        "id": 21,
+        "image": "userImgDefault.png",
+        "firstName": "sasasas",
+        "lastName": "asasasas",
+        "email": "jaja@hotmail.com",
+        "password": "$2a$10$btBcUOiNuiCHvVULTpcwSuJaaGLYzYMRlDIvmOOSgIQNs.6L89vwe",
+        "admin": false
     }
 ]

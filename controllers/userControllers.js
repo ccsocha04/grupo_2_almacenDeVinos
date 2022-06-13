@@ -11,6 +11,12 @@ let userControllers = {
     login: (req, res) => {
         res.render("user/login");
     },
+    userDetail: function (req, res) {
+        let { id } = req.params;
+        let editarProducto = usuarios.find(product => product.id == id);
+        
+        res.render("./user/user-detail", { producto: editarProducto });
+   },
     processLogin: (req, res) => {
         let errors = validationResult(req);
         if (!errors.isEmpty()) {
