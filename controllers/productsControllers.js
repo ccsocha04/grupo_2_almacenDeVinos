@@ -24,7 +24,8 @@ let productsControllers = {
           let { id } = req.params;
           let editarProducto = products.find(product => product.id == id);
           
-          res.render("./products/product-detail", { producto: editarProducto });
+          
+          res.render("./products/product-detail", { producto: editarProducto});
      },
 
      cart: function (req, res) {

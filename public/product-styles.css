@@ -166,7 +166,6 @@ box-shadow:  20px 20px 60px #bebebe,
     flex-wrap: wrap;
     align-items: center;
     padding-top: 10%;
-    padding-bottom: 10%;
     
 }
 
@@ -177,18 +176,17 @@ box-shadow:  20px 20px 60px #bebebe,
 
 .descripcion {
     width: 35%;
-    height: 55vh;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color:rgba(255, 255, 255, 0.3);
-    text-align: center;
+    background-color: lightgray;
 }
 
 
 .descripcion div {
 
-    
+    text-align: center;
     
     
     
@@ -320,12 +318,10 @@ box-shadow:  20px 20px 60px #bebebe,
     }
     
     .imagen {
-        width: 45%;
+        width: 47%;
     }
     
     .descripcion {
-      
-        height: 50vh;
         width: 35%;
         display: flex;
         flex-direction: column;
@@ -340,7 +336,7 @@ box-shadow:  20px 20px 60px #bebebe,
     
     .descripcion div {
     
-        
+        text-align: center;
         
         
         
@@ -365,7 +361,6 @@ box-shadow:  20px 20px 60px #bebebe,
         font-size: 20px;
         padding: 0px;
         padding-bottom: 7%;
-        text-align: justify 
         
     }
     
@@ -423,114 +418,6 @@ box-shadow:  20px 20px 60px #bebebe,
   }
   
   @media (min-width: 1024px) {
-
-    .detalle {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-  
-  .imagen {
-      width: 35%;
-  }
-  
-  .descripcion {
-    
-      height: 65vh;
-      width: 30%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      
-     
-      
-      
-  }
-  
-  
-  .descripcion div {
-  
-      
-      
-      
-      
-      margin: auto;
-  
-  }
-  
-  .nombre-producto {
-      width: 75%;
-      font-size: 30px;
-      font-weight: bold;
-      padding: 0px;
-      padding-bottom: 7%;
-      
-      
-     
-      
-  }
-  
-  .descripcion-producto {
-      width: 75%;
-      font-size: 20px;
-      padding: 0px;
-      padding-bottom: 7%;
-      text-align: justify 
-      
-  }
-  
-  .precio-producto {
-      font-size: 30px;
-      
-  }
-  
-  .cantidad {
-    font-size: 25px;
-    
-   
-  }
-  
-  .caja-cantidades {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .valor-cantidad {
-      text-align: center;
-      width: 25%;
-      font-weight: bold;
-      height: 40px;
-  }
-  
-  .carrito-mas {
-    text-align: center;
-    font-size: 35px;
-    
-  }
-  
-  
-  .puede-interesar {
-    padding: 50px;
-  }
-
-
-
-
-
-  .oculto {
-    display: block;
-  }
-  
-
-  .art-oculto {
-    display: block;
-  }
-    
-
-
-
 
 
   }
