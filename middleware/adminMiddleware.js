@@ -6,7 +6,7 @@ function adminMiddleware(req, res, next) {
     if (req.session.user != undefined && req.session.user.admin == true ) {
         next()
     } else {
-        res.render("./error/adminerror.ejs")
+        res.redirect("/user/login")
     }
 }
 
